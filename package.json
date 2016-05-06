@@ -1,7 +1,7 @@
 {
   "name": "rest-api-mock",
 
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "framework to build a restful api mock.",
   "main": "server.js",
 

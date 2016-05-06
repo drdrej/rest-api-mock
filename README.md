@@ -6,7 +6,7 @@ simple way to create ocks in nodejs.
 ## Example
 
 ''''
-    var Server = require( "mockapi" );
+    var Server = require( "rest-api-mock" );
 
     var server = new Server({
         name: "Example"
