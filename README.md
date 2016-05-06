@@ -1,6 +1,6 @@
 # rest-api-mock
 
-simple way to create ocks in nodejs.
+simple way to create mocks in nodejs.
 
 ## Example
 
