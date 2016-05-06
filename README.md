@@ -1,11 +1,10 @@
 # rest-api-mock
-simple rest api mock
 
 simple way to create ocks in nodejs.
 
 ## Example
 
-''''
+````java
     var Server = require( "rest-api-mock" );
 
     var server = new Server({
@@ -28,5 +27,4 @@ simple way to create ocks in nodejs.
     });
 
     server.start();
-
-''''
+````
