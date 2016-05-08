@@ -1,5 +1,8 @@
 //strict
 
+var restify = require('restify');
+var jsonpointer = require( 'jsonpointer.js' );
+
 var ResponseHandler = function(server, requestConfig) {
     this.server = server;
     this.requestConfig = requestConfig;
@@ -32,7 +35,7 @@ ResponseHandler.prototype.response = function( resultFnc ) {
 };
 
 var Server = function( config ) {
-    var restify = require('restify');
+    this.state = {};
     // var querystring = require('querystring');
 
     // TODO: Init Logger ...
@@ -56,13 +59,36 @@ var Server = function( config ) {
 
     server.use(restify.fullResponse());
 
-    // TODO: log server initialization completed.
+    /*
+    server.on( 'after', restify.auditLogger({
+        log: bunyan.createLogger({
+            name: 'audit',
+            stream: process.stdout
+        })
+    }));
+    */
+
+    console.log("> server initialization completed." );
     this.server = server;
 };
 
 Server.prototype.on = function( requestConfig ) {
     return new ResponseHandler(this.server, requestConfig );
 };
+
+Server.prototype.state = function( initial ) {
+    this.state = initial;
+};
+
+Server.prototype.get = function( path ) {
+    return jsonpointer.get(this.state, path );
+};
+
+/*
+Server.prototype.push = function( path, value ) {
+
+};
+*/
 
 Server.prototype.start = function ( ) {
     this.server.listen( 8383, function () {
