@@ -31,8 +31,18 @@ ResponseHandler.prototype.response = function( resultFnc ) {
 
             log(inReq);
 
+            var body =  function body( path ) {
+                if( !inReq.body ) {
+                    console.error( "Body is NULL/undefined, couldn't request body." );
+                    return undefined;
+                }
+
+                return jsonpointer.get( inReq.body, path );
+            };
+
             // match()
-            var json = resultFnc();
+            var json = resultFnc(body);
+
             if( json == null ) {
                 json = {};
             }
