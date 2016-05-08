@@ -2,6 +2,7 @@
 
 var restify = require('restify');
 var jsonpointer = require( 'jsonpointer.js' );
+// var querystring = require('querystring');
 
 var ResponseHandler = function(server, requestConfig) {
     this.server = server;
@@ -17,9 +18,19 @@ ResponseHandler.prototype.response = function( resultFnc ) {
         throw "MISSING param in server.config";
     }
 
+    function log( req ) {
+       console.log( "> body: ");
+       console.log( req.body );
+       console.log( "< body" );
+    }
+
+
     this.server[this.requestConfig.method] (
         this.requestConfig.endpoint,
         function ( inReq, inRes, inNext ) {
+
+            log(inReq);
+
             // match()
             var json = resultFnc();
             if( json == null ) {
@@ -35,15 +46,11 @@ ResponseHandler.prototype.response = function( resultFnc ) {
 };
 
 var Server = function( config ) {
-    this.state = {};
-    // var querystring = require('querystring');
-
-    // TODO: Init Logger ...
+    this.appState = {};
 
     var server = restify.createServer({
         name: config.name + '-rest-api',
         version: '1.0.0'
-        /* log: log */
     });
 
     server.use(restify.acceptParser(server.acceptable));
@@ -77,11 +84,11 @@ Server.prototype.on = function( requestConfig ) {
 };
 
 Server.prototype.state = function( initial ) {
-    this.state = initial;
+    this.appState = initial;
 };
 
 Server.prototype.get = function( path ) {
-    return jsonpointer.get(this.state, path );
+    return jsonpointer.get(this.appState, path );
 };
 
 /*
