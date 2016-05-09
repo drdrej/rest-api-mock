@@ -19,20 +19,22 @@ ResponseHandler.prototype.match = function () {
 ResponseHandler.prototype.forward = function( fwdUrl, fwdResultHandlerFnc ) {
     _checkMethod(this.requestConfig);
 
+    var endpoint = this.requestConfig.endpoint;
+
     this.server[this.requestConfig.method] (
         this.requestConfig.endpoint,
         function ( inReq, inRes, inNext ) {
             // log(inReq);
 
+            // TODO: posts should be forwarded also.
             var fwdReq = unirest.get( fwdUrl );
 
-            fwdReq.method( this.requestConfig.method );
-
             if( inReq.query ) {
-                console.log( ">> copy query-params ... ");
+                console.log( ">> copy query-params ... " );
                 fwdReq.query( inReq.query );
             }
 
+            /*
             if( inReq.params ) {
                 console.log( ">> copy form-params ... ");
                 fwdReq.form( inReq.params );
@@ -41,18 +43,25 @@ ResponseHandler.prototype.forward = function( fwdUrl, fwdResultHandlerFnc ) {
             fwdReq.headers({
                 'Content-Type': 'text/html'
             });
+            */
 
             fwdReq.end(
                 function success(response) {
-                    console.log(response);
+                    console.log( response );
 
-                    inRes.send(response.body); // BODY wird einfach weiter kopiert.
+                    inRes.send(response.body); // BODY copy without modifications.
 
                     inNext();
                 },
 
-                function error( err) {
-                    console.log("err: " + err);
+                function error( err ) {
+                    console.error( err );
+
+                    inRes.send( {
+                        error: "Connection to endpoint [" + endpoint +"] is broken."
+                    });
+
+                    inNext();
                 });
         }
     );
