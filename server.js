@@ -12,11 +12,12 @@ var ResponseHandler = function(server, requestConfig) {
 };
 
 ResponseHandler.prototype.match = function () {
-
+    // todo: match params.
+    return true;
 };
 
 ResponseHandler.prototype.forward = function( fwdUrl, fwdResultHandlerFnc ) {
-    _checkMethod();
+    _checkMethod(this.requestConfig);
 
     this.server[this.requestConfig.method] (
         this.requestConfig.endpoint,
@@ -60,8 +61,8 @@ ResponseHandler.prototype.forward = function( fwdUrl, fwdResultHandlerFnc ) {
 
 // config check methoden :::
 // -----------------------------------------------------
-function _checkMethod() {
-    if( !this.requestConfig.method ) {
+function _checkMethod( config ) {
+    if( !config.method ) {
         throw "MISSING param in server.config";
     }
 
@@ -69,7 +70,7 @@ function _checkMethod() {
 };
 
 ResponseHandler.prototype.response = function( resultFnc ) {
-    _checkMethod();
+    _checkMethod(this.requestConfig);
 
     function log( req ) {
         console.log( "> body: ");
