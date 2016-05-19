@@ -3,6 +3,7 @@
 var restify = require('restify');
 var jsonpointer = require( 'jsonpointer.js' );
 var unirest = require( "unirest" );
+var ParamMapper = require( "./impl/ParamMapper" );
 
 // var querystring = require('querystring');
 
@@ -77,9 +78,14 @@ function _checkMethod( config ) {
     }
 
     return true;
+}
+
+
+ResponseHandler.prototype.error = function( httpCode,  resultFnc ) {
+
 };
 
-ResponseHandler.prototype.response = function( resultFnc ) {
+ResponseHandler.prototype.responseV1 = function( resultFnc ) {
     _checkMethod(this.requestConfig);
 
     function log( req ) {
@@ -105,6 +111,49 @@ ResponseHandler.prototype.response = function( resultFnc ) {
 
             // match()
             var json = resultFnc(body);
+
+            if( json == null ) {
+                json = {};
+            }
+
+            inRes.send(json);
+
+            return inNext();
+
+            // else -?> skip ---> am ende muss ein default response zurueck gegeben.
+        });
+};
+
+
+function log( req ) {
+    console.log( "> body: ");
+    console.log( req.body );
+    console.log( "< body" );
+}
+
+ResponseHandler.prototype.response = function( resultFnc ) {
+    _checkMethod(this.requestConfig);
+
+    var mappings = null;
+
+    if( this.requestConfig.mappings )
+        mappings = this.requestConfig.mappings;
+
+
+    var hasLog = false;
+    if( this.requestConfig.log )
+        hasLog = this.requestConfig.log;
+
+    this.server[this.requestConfig.method] (
+        this.requestConfig.endpoint,
+        function ( inReq, inRes, inNext ) {
+            if(hasLog)
+                log(inReq);
+
+            var paramMapper = new ParamMapper(mappings);
+            var json = resultFnc.apply(resultFnc, paramMapper.map(inReq));
+
+            // resultFnc(body);
 
             if( json == null ) {
                 json = {};
