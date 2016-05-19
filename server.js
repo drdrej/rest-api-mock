@@ -17,17 +17,18 @@ ResponseHandler.prototype.match = function () {
 };
 
 ResponseHandler.prototype.forward = function( fwdUrl, fwdResultHandlerFnc ) {
+    // Case-Sensoitive-Check.
     _checkMethod(this.requestConfig);
 
     var endpoint = this.requestConfig.endpoint;
+    var method = this.requestConfig.method;
 
-    this.server[this.requestConfig.method] (
-        this.requestConfig.endpoint,
+    this.server[method] (
+        endpoint,
         function ( inReq, inRes, inNext ) {
             // log(inReq);
 
-            // TODO: posts should be forwarded also.
-            var fwdReq = unirest.get( fwdUrl );
+            var fwdReq = unirest[method]( fwdUrl );
 
             if( inReq.query ) {
                 console.log( ">> copy query-params ... " );
