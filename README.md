@@ -2,34 +2,56 @@
 
 simple way to create mocks in nodejs.
 
-######Important:
+######Important: (currently)
 1. Experimental
 2. Not tested
-3. not fo"
 
-## Example
+## Installation
 
+   > npm install --save rest-api-mock
+   
+   **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console.  
+   
+## Initialize server   
 ````java
-    var Server = require( "rest-api-mock" );
+    var Mock = require( "rest-api-mock" );
 
-    var server = new Server({
+    var mock = new Mock({
         name: "Example"
     });
+````
 
+## Mock
 
-    server.on({
-        method   : "post",
-        endpoint : "/example"
-    }).response( function() {
-        return { ... };
-    });
+### Simple GET response
 
-    server.on({
+... returns an json-object in http-response.
+
+````java
+    mock.on({
         method   : "get",
         endpoint : "/example"
+        
     }).response( function() {
-        return { ... };
+        return { ... }; 
     });
-
-    server.start();
 ````
+
+### Simple POST response
+
+## Forward 
+
+````java
+mock.on({
+    method: "get",
+    endpoint: "/xyz"
+}).forward(
+    "https://www.xyz.de/path",
+    function ( forwardResult ) {
+        return forwardResult; // callback to modify json-result/response bevore it goes to client.
+});
+````
+
+
+
+## Start mock
