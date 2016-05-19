@@ -55,3 +55,6 @@ mock.on({
 
 
 ## Start mock
+````java
+server.start();
+````
