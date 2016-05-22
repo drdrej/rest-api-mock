@@ -1,0 +1,27 @@
+// this format should be supported:
+// ---------------------------------
+{
+    "endpoint": {
+        "method": "get",
+        "path": "/item/5", // path://id == 5
+        "pattern": "/item/:id",
+
+        "match": [
+        {
+            "not": {
+                "query://param1": {
+                    "is": "x"
+                }
+            }
+        },
+        {
+            "query://param2": {
+                "is": "y"
+            }
+        }
+    ]
+},
+
+    "log": true,
+    "response": "call://response-1.js"
+}
