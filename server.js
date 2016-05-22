@@ -88,12 +88,6 @@ ResponseHandler.prototype.error = function( httpCode,  resultFnc ) {
 ResponseHandler.prototype.responseV1 = function( resultFnc ) {
     _checkMethod(this.requestConfig);
 
-    function log( req ) {
-        console.log( "> body: ");
-        console.log( req.body );
-        console.log( "< body" );
-    }
-
     this.server[this.requestConfig.method] (
         this.requestConfig.endpoint,
         function ( inReq, inRes, inNext ) {
@@ -139,8 +133,8 @@ ResponseHandler.prototype.response = function( resultFnc ) {
     if( this.requestConfig.mappings )
         mappings = this.requestConfig.mappings;
 
-
     var hasLog = false;
+
     if( this.requestConfig.log )
         hasLog = this.requestConfig.log;
 
@@ -151,9 +145,15 @@ ResponseHandler.prototype.response = function( resultFnc ) {
                 log(inReq);
 
             var paramMapper = new ParamMapper(mappings);
-            var json = resultFnc.apply(resultFnc, paramMapper.map(inReq));
 
-            // resultFnc(body);
+            var json;
+
+            if( !resultFnc ) {
+                json = {};
+            } else {
+                var params = paramMapper.map(inReq);
+                json = resultFnc.apply(resultFnc, params);
+            }
 
             if( json == null ) {
                 json = {};
