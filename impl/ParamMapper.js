@@ -48,12 +48,12 @@ ParamMapper.prototype._get = function(httpReq, mapping) {
         return;
     }
 
-    if( !mapping.name ) {
-        console.error( "!! mapping has no name." );
+    if( !mapping.key ) {
+        console.error( "!! mapping has no key." );
         return;
     }
 
-    return httpReq[mapping.name];
+    return httpReq[mapping.key];
 };
 
 ParamMapper.prototype.map = function ( httpReq ) {
