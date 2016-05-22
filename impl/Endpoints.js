@@ -23,8 +23,11 @@ var Endpoints = function() {
             this.endpoints[ reqConfig.endpoint.pattern ] = endpoint;
         }
 
+        endpoint.addCase(reqConfig, callback, arguments);
+
         return endpoint;
     };
+
 
     /**
      * register all endpoints ...

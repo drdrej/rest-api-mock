@@ -1,7 +1,12 @@
 var _ = require( "underscore" );
 var ParamMapper = require( "./ParamMapper" );
 
-
+/**
+ * ... byPatter.
+ *
+ * @param endpoint
+ * @constructor
+ */
 var Endpoint = function(endpoint) {
     this.method  = endpoint.method;
     this.pattern = endpoint.pattern;
@@ -9,76 +14,70 @@ var Endpoint = function(endpoint) {
     this.cases = [];
 };
 
-Endpoint.prototype.findCase = function( endpoint ) {
-    var usecase = this.cases[ endpoint.path ];
 
-    if( !usecase ) {
-        console.error( "couldn't find usecase" );
-        return;
-    }
+Endpoint.prototype.addCase = function( endpoint, callback, mappings ) {
+    var ParamMapper = require( "./ParamMapper" );
 
+    var mapper = new ParamMapper(mappings);
 
+    this.cases.push( {
+        path: endpoint.path, // Path-Patterns und andere Matcher.
 
-
-
+        callback : callback,
+        arguments : mapper
+    });
 };
 
-Endpoint.prototype.addCase = function( endpoint ) {
-    /*if( _.isEmpty(this.cases) ) {
+Endpoint.prototype.matchCase = function( inReq ) {
+    var rval;
 
-    }
+    _.each( this.cases,
+        function( usecase ) {
 
-    this.cases.push( new Usecase() );
-    */
+            if( inReq.path() === usecase.path ) {
+                rval = usecase;
+            }
+    });
+
+    return rval;
 };
 
-Endpoint.prototype._callback = function( inReq, inRes, inNext ) {
-        console.log( "catched " + this.method + " rest-call of " +  this.pattern );
-
-        // if(hasLog)
-        //    log(inReq);
-
-        var usecase = this.matchCase(inReq);
-
-        if( !usecase ) {
-            console.error( "usecase not found." );
-            return inNext();
-        }
-
-        inRes.send({
-            success:true
-        });
-
-        /*
-        var paramMapper = new ParamMapper(mappings);
-
-        var json;
-
-        if( !resultFnc ) {
-            json = {};
-        } else {
-            var params = paramMapper.map(inReq);
-            json = resultFnc.apply(resultFnc, params);
-        }
-
-        if( json == null ) {
-            json = {};
-        }
-
-        inRes.send(json);
-
-        return inNext();
-
-        // else -?> skip ---> am ende muss ein default response zurueck gegeben.
-        */
-};
 
 Endpoint.prototype.useBy = function( server ) {
     console.log( "setup endpoint "
         + this.method + ": "
         + this.pattern);
 
-    server[this.method] (this.pattern, this._callback);
+
+    ...
+
+    server[this.method] (this.pattern, function( inReq, inRes, inNext ) {
+        console.log("catched " + this.method + " rest-call of " + this.pattern);
+
+        // if(hasLog)
+        //    log(inReq);
+
+        var usecase = this.matchCase(inReq);
+
+        if (!usecase) {
+            console.error("usecase not found.");
+            return inNext();
+        }
+
+        var args = usecase.mapper.map(inReq);
+        var json = usecase.mapper.callback.apply(this, args);
+
+
+        if (json == null) {
+            json = {
+                success: true
+            };
+        }
+
+        inRes.send(json);
+
+        return inNext();
+    });
 };
 
 
