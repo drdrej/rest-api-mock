@@ -1,9 +1,9 @@
 var expect    = require("chai").expect;
 var Server = require("../server.js" );
 
-describe("Server", function() {
+describe("Server lifecycle", function() {
 
-    describe("use server by api", function() {
+    describe("initialization", function() {
 
         it( "simple server", function() {
             var server = new Server({
@@ -18,7 +18,8 @@ describe("Server", function() {
             // expect( server.endpoints ).to.be.a( 'endpoints' );
         });
 
-
     });
+
+
 });
 

@@ -35,7 +35,7 @@ var Server = function( config ) {
 
     server.use(restify.fullResponse());
 
-    console.log("> server initialization completed." );
+    console.log("> http-server initialization completed." );
 
     this.server = server;
 };
@@ -61,11 +61,24 @@ Server.prototype.get = function( path ) {
 
 
 Server.prototype.start = function ( ) {
-    this.endpoints.register( this.server );
+    if (!this.isUnregistred) {
+        console.log("register endpoints." );
+
+        this.endpoints.register(this.server);
+        this.isUnregistred = true;
+    }
 
     // start server ...
     this.server.listen( 8383, function () {
         console.log("rest-api successful started. let's play" );
+    });
+};
+
+Server.prototype.stop = function ( ) {
+    // ??? this.endpoints.register( this.server );
+
+    this.server.close( function () {
+        console.log("rest-api successful stopped. good night!" );
     });
 };
 
