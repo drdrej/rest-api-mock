@@ -2,7 +2,7 @@ var _ = require( "underscore" );
 var ParamMapper = require( "./ParamMapper" );
 
 /**
- * ... byPatter.
+ * ... byPattern.
  *
  * @param endpoint
  * @constructor
@@ -53,6 +53,7 @@ Endpoint.prototype.useBy = function( server ) {
     };
 
     var logMsgCatchReq = ("catched " + this.method + " rest-call of " + this.pattern);
+    var pattern = this.pattern;
 
     server[this.method] (this.pattern,
         function( inReq, inRes, inNext ) {
@@ -65,6 +66,12 @@ Endpoint.prototype.useBy = function( server ) {
 
             if (!usecase) {
                 console.error("usecase not found.");
+                inRes.send( {
+                    "error" : "no usecase attached to this pattern",
+                    "pattern" : pattern,
+                    "path" : inReq.path()
+                });
+
                 return inNext();
             }
 
