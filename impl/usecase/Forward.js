@@ -4,8 +4,8 @@
 var unirest = require( "unirest" );
 
 module.exports = function handle( usecase, inReq, inRes, inNext ) {
-
-    var fwdReq = unirest[method](fwdUrl);
+    var method = inReq.method.toLowerCase();
+    var fwdReq = unirest[method]( usecase.forwardUrl );
 
     if (inReq.query) {
         console.log(">> copy query-params ... ");

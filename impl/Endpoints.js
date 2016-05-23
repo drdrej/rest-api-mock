@@ -5,22 +5,8 @@ var Endpoints = function() {
 
     this.endpoints = {};
 
-    /**
-     * Create/Bind endpoints and usecases.
-     */
-    this.create = function(bindingType, reqConfig, callback, arguments) {
 
-        /*
-         if( _.isObject( reqConfig )
-         && _.has(reqConfig, "endpoint")
-         && _.has(reqConfig.endpoint, "pattern") ) {
-
-         console.error( "!! resultConfig.endpoint.pattern not exists." );
-         return;
-         }
-         */
-
-
+    this.create = function( reqConfig ) {
         var endpoint = this.endpoints[ reqConfig.endpoint.pattern ];
 
         if( !endpoint ) {
@@ -28,10 +14,27 @@ var Endpoints = function() {
             this.endpoints[ reqConfig.endpoint.pattern ] = endpoint;
         }
 
-        endpoint.addCase( bindingType, reqConfig, callback, arguments);
+        return endpoint;
+    };
+
+    /**
+     * Create/Bind endpoints and usecases.
+     */
+    this.response = function(reqConfig, callback, arguments) {
+        var endpoint = this.create( reqConfig );
+        endpoint.addCase(reqConfig, callback, arguments);
 
         return endpoint;
     };
+
+
+    this.forward = function(reqConfig, url) {
+        var endpoint = this.create( reqConfig );
+        endpoint.addForwardCase(reqConfig, url);
+
+        return endpoint;
+    };
+
 
     /*
     this.response = function( reqConfig, callback, arguments  ) {

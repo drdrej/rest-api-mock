@@ -13,19 +13,31 @@ var Endpoint = function(endpoint) {
     this.cases = [];
 };
 
+Endpoint.prototype.addForwardCase = function(config, url) {
+    this.cases.push( {
+        bindType: 'Forward',
 
-Endpoint.prototype.addCase = function( bindType, config, callback, mappings ) {
+        path: config.endpoint.path, // Path-Patterns und andere Matcher.
+
+        forwardUrl : url
+    });
+};
+
+Endpoint.prototype.addCase = function( config, callback, mappings ) {
     var ParamMapper = require( "./ParamMapper" );
 
     var mapper = new ParamMapper(mappings);
 
-    this.cases.push( {
-        bindType: bindType,
+    var usecase = {
+        bindType: 'Response',
+
         path: config.endpoint.path, // Path-Patterns und andere Matcher.
 
         callback : callback,
         mapper : mapper
-    });
+    };
+
+    this.cases.push( usecase );
 };
 
 Endpoint.prototype.useBy = function( server ) {
