@@ -1,4 +1,6 @@
 var _ = require( "underscore" );
+// var ParamMapper = require( "./ParamMapper" );
+
 var Response = function( server, method, pattern, cases ) {
 
     console.log( "setup endpoint "
