@@ -9,10 +9,10 @@ simple way to create mocks in nodejs.
 ## Installation
 
    > npm install --save rest-api-mock
-   
-   **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console.  
-   
-## Initialize server   
+
+   **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console.
+
+## Initialize server
 ````java
     var Mock = require( "rest-api-mock" );
 
@@ -31,15 +31,15 @@ simple way to create mocks in nodejs.
     mock.on({
         method   : "get",
         endpoint : "/example"
-        
+
     }).response( function() {
-        return { ... }; 
+        return { ... };
     });
 ````
 
 ### Simple POST response
 
-## Forward 
+## Forward
 
 ````java
 mock.on({
@@ -60,7 +60,7 @@ server.start();
 ````
 
 
-## Another Mock-Servers 
+## Another Mock-Servers
 * https://www.npmjs.com/package/mock-restful
 * https://www.npmjs.com/package/api-mock
 * https://www.npmjs.com/package/mock-rest-request
