@@ -75,13 +75,22 @@ Endpoint.prototype.useBy = function( server ) {
                 return inNext();
             }
 
-            var args = usecase.mapper.map(inReq);
+            if( !usecase.callback ) {
+                console.error("!! usecase.callback is missing, retur {}." );
+                inRes.send({});
+
+                return inNext();
+            }
+
+            var args= [];
+            if( usecase.mapper ) {
+                args = usecase.mapper.map(inReq);
+            }
+
             var json = usecase.callback.apply(this, args);
 
             if ( !json ) {
-                json = {
-                    success: true
-                };
+                json = {};
             }
 
             inRes.send(json);
