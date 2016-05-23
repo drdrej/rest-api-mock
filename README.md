@@ -101,20 +101,3 @@ mock.stop();
 * https://github.com/typicode/json-server
 * http://www.mock-json-api.com/
 * http://www.mock-server.com/where/npm.html
-
-
-
-
-
-server.on({
-    name: "yyyy",
-    description: "dasdasdasd",
-
-    endpoint : {
-        method: "get",
-        pattern: "/fwd/:id", // TODO: maybe move to specs! here only usecase!!! match later...
-        path: "/fwd/1"
-    },
-
-    log: true
-}).forward( "http://localhost:8383/item/5" );
