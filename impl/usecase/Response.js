@@ -1,17 +1,7 @@
-module.exports = function(pattern, matchCase, inReq, inRes, inNext) {
-    var usecase = matchCase(inReq);
-
-    if (!usecase) {
-        console.error("usecase not found.");
-        inRes.send( {
-            "error" : "no usecase attached to this pattern",
-            "pattern" : pattern,
-            "path" : inReq.path()
-        });
-
-        return inNext();
-    }
-
+/**
+ * Created by asiebert on 23.05.16.
+ */
+module.exports = function handle( usecase, inReq, inRes, inNext ) {
     if( !usecase.callback ) {
         console.error("!! usecase.callback is missing, retur {}." );
         inRes.send({});
@@ -33,4 +23,4 @@ module.exports = function(pattern, matchCase, inReq, inRes, inNext) {
     inRes.send(json);
 
     return inNext();
-};
+}

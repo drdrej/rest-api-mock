@@ -29,7 +29,7 @@ var Response = function( server, method, pattern, cases ) {
             // if(hasLog)
             //    log(inReq);
 
-            var handle = require( "./HandleUseCase");
+            var handle = require( "./UsecaseHandler");
             return handle(pattern, matchCase, inReq, inRes, inNext);
         });
 };

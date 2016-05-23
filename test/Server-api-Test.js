@@ -44,9 +44,6 @@ describe("Server HTTP Api", function() {
         version: '*'
     });
 
-
-
-
     before(function () {
         console.log( "start server..." );
         server.start();
@@ -78,7 +75,22 @@ describe("Server HTTP Api", function() {
 
     });
 
+    describe("fwd-endpoint exists", function() {
 
+        it( "get", function( done ) {
+            client.get('/fwd/1', function(err, req, res, obj) {
+                assert.ifError( err);
+                assert.equal( 200, res.statusCode );
+
+                assert.isDefined(obj, 'has response object');
+                assert.isDefined(obj.success, "response object has property 'success'." );
+
+                done();
+            });
+
+        });
+
+    });
 /*
     describe("get-endpoint not exists", function() {
 
