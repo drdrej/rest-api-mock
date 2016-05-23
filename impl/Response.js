@@ -1,47 +1,9 @@
 var _ = require( "underscore" );
-var ParamMapper = require( "./ParamMapper" );
+var Response = function( server, method, pattern, cases ) {
 
-/**
- * ... byPattern.
- *
- * @param endpoint
- * @constructor
- */
-var Endpoint = function(endpoint) {
-    this.method  = endpoint.method;
-    this.pattern = endpoint.pattern;
-
-    this.cases = [];
-};
-
-
-Endpoint.prototype.addCase = function( config, callback, mappings ) {
-    var ParamMapper = require( "./ParamMapper" );
-
-    var mapper = new ParamMapper(mappings);
-
-    this.cases.push( {
-        path: config.endpoint.path, // Path-Patterns und andere Matcher.
-
-        callback : callback,
-        mapper : mapper
-    });
-};
-
-// Endpoint.prototype.matchCase =
-
-
-Endpoint.prototype.useBy = function( server ) {
-    var response = require( "./Response" );
-    
-    response(server, this.method, this.pattern, this.cases );
-
-    /*
     console.log( "setup endpoint "
-        + this.method + ": "
-        + this.pattern);
-
-    var cases = this.cases;
+        + method + ": "
+        + pattern);
 
     function matchCase( inReq ) {
         var rval;
@@ -57,10 +19,9 @@ Endpoint.prototype.useBy = function( server ) {
         return rval;
     };
 
-    var logMsgCatchReq = ("catched " + this.method + " rest-call of " + this.pattern);
-    var pattern = this.pattern;
+    var logMsgCatchReq = ("catched " + method + " rest-call of " + pattern);
 
-    server[this.method] (this.pattern,
+    server[method] (pattern,
         function( inReq, inRes, inNext ) {
             console.log( logMsgCatchReq );
 
@@ -92,7 +53,7 @@ Endpoint.prototype.useBy = function( server ) {
                 args = usecase.mapper.map(inReq);
             }
 
-            var json = usecase.callback.apply(this, args);
+            var json = usecase.callback.apply(usecase, args);
 
             if ( !json ) {
                 json = {};
@@ -101,12 +62,8 @@ Endpoint.prototype.useBy = function( server ) {
             inRes.send(json);
 
             return inNext();
-    });
-*/
-
-
+        });
 };
 
 
-
-module.exports = Endpoint;
+module.exports = Response;
