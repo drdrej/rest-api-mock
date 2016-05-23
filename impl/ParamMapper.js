@@ -68,7 +68,7 @@ ParamMapper.prototype.map = function ( httpReq ) {
 
          var val = this._get(httpReq, mapping);
          rval.push(val);
-   });
+   }, this);
 
    return rval;
 };

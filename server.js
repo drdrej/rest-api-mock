@@ -44,6 +44,13 @@ Server.prototype.on = function( requestConfig ) {
     return new ResponseApi(this, requestConfig);
 };
 
+/*
+Server.prototype.usecase = function( requestConfig ) {
+    return new ResponseApi(this, requestConfig);
+};
+*/
+
+
 Server.prototype.state = function( initial ) {
     this.appState = initial;
 };

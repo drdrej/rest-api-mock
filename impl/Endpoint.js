@@ -15,16 +15,16 @@ var Endpoint = function(endpoint) {
 };
 
 
-Endpoint.prototype.addCase = function( endpoint, callback, mappings ) {
+Endpoint.prototype.addCase = function( config, callback, mappings ) {
     var ParamMapper = require( "./ParamMapper" );
 
     var mapper = new ParamMapper(mappings);
 
     this.cases.push( {
-        path: endpoint.path, // Path-Patterns und andere Matcher.
+        path: config.endpoint.path, // Path-Patterns und andere Matcher.
 
         callback : callback,
-        arguments : mapper
+        mapper : mapper
     });
 };
 
@@ -76,7 +76,7 @@ Endpoint.prototype.useBy = function( server ) {
             }
 
             var args = usecase.mapper.map(inReq);
-            var json = usecase.mapper.callback.apply(this, args);
+            var json = usecase.callback.apply(this, args);
 
             if ( !json ) {
                 json = {
