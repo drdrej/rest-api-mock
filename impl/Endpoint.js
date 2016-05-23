@@ -14,12 +14,13 @@ var Endpoint = function(endpoint) {
 };
 
 
-Endpoint.prototype.addCase = function( config, callback, mappings ) {
+Endpoint.prototype.addCase = function( bindType, config, callback, mappings ) {
     var ParamMapper = require( "./ParamMapper" );
 
     var mapper = new ParamMapper(mappings);
 
     this.cases.push( {
+        bindType: bindType,
         path: config.endpoint.path, // Path-Patterns und andere Matcher.
 
         callback : callback,

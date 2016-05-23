@@ -5,11 +5,11 @@ var ResponseApi = function( server, config ) {
     };
 
     this.response = function( arguments, callback ) {
-       server.endpoints.create(config, callback, arguments);
+       server.endpoints.create( 'Response', config, callback, arguments);
     };
 
-    this.forward = function() {
-        // server.endpoints.create(config, callback, arguments);
+    this.forward = function(arguments, callback) {
+        server.endpoints.create( 'Forward', config, callback, arguments);
     };
 
 };
