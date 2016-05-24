@@ -1,0 +1,21 @@
+{
+  "actions" : "../actions/*.js",
+
+  "story" : [{
+    "name": "endpoint-1",
+    "description": "simple get example to create an get-endpoint",
+
+    "on" : {
+      "endpoint": {
+        "method": "get",
+        "pattern": "/item/:id",
+        "path": "/item/5"
+      },
+
+      "log": true
+    },
+
+    "action" : "simple-success-action"
+  }]
+}
+
