@@ -95,9 +95,18 @@ mock.start();
 mock.stop();
 ````
 ## Another Mock-Servers 
+
 * https://www.npmjs.com/package/mock-restful
 * https://www.npmjs.com/package/api-mock
 * https://www.npmjs.com/package/mock-rest-request
 * https://github.com/typicode/json-server
 * http://www.mock-json-api.com/
 * http://www.mock-server.com/where/npm.html
+
+
+### for swagger 
+* https://www.npmjs.com/package/swagger-mock
+* https://github.com/dzdrazil/swagger-mock-api
+* https://www.npmjs.com/package/swagger-server
+* 
+
