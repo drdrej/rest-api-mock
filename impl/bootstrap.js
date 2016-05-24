@@ -38,30 +38,39 @@ function setupUsecase(server, root, actions, usecase) {
     console.log( ".. setup usecase: " + usecase.name);
 
     // currently only strings supported.
-    var file;
-
     if( usecase.action ) {
         var S = require( "string" );
-        var rel = S( actions ).replaceAll('*', usecase.action).s;
 
-         var path = require( "path" );
+        if( S(usecase.action).startsWith( "http://" ) ) {
+            server.on(usecase.on).forward(usecase.action);
+            return;
+        } else {
+            var file;
 
-         console.log( ">>> relative path."  );
-         console.log( "... root: " + root );
-         console.log( "... rel: " + rel );
 
-         file = (path.dirname(root) + "/" + rel);
-         // file = path.resolve ... relative(root, rel));
-         // file = path.resolve();
+            var aPattern = S( actions );
+            var rel = aPattern.replaceAll('*', usecase.action).s;
+
+            var path = require("path");
+
+            console.log(">>> relative path.");
+            console.log("... root: " + root);
+            console.log("... rel: " + rel);
+
+            file = (path.dirname(root) + "/" + rel);
+            // file = path.resolve ... relative(root, rel));
+            // file = path.resolve();
+
+            var js = require( file );
+            var jsDef = js.apply();
+
+            server.on(usecase.on).response(jsDef.args, jsDef.call);
+
+            return;
+        }
     } else
         throw "Not supported";
 
-    var js = require( file );
-    var jsDef = js.apply();
-
-    server.on(usecase.on).response(jsDef.args, jsDef.call);
-
-    console.log( ">>>> jsDef.call : " + jsDef.call)
 }
 
 module.exports = function(build, config, cwd, story) {
