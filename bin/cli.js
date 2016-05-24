@@ -1,12 +1,40 @@
 var build = require( "./build.json" );
-var cli = require('commander');
+var app = require('commander');
 
-cli
+app
     .version( build.version ) // .option('-c, --case <case>', 'Add jira case id (used as folder)')
-    .option('-l, --log', 'Use log')
-    .parse(process.argv);
+    .option('-c, --config <config>', 'path to mocky.json' )
+    .option('-l, --log', 'Use log');
 
-console.log( "Current directory: " + process.cwd() );
+
+
+app
+    .command( 'exec <cmd>' )
+    .action(function(env) {
+        console.log('running "%s"', env);
+
+        var cwd = process.cwd();
+        console.log( "Current directory: " + cwd );
+
+
+        var configFile;
+            if(!app.config) {
+              configFile  = (cwd + "/mocky.json" );
+            } else {
+              configFile  = (cwd + "/" + app.config);
+            }
+
+        console.log( "Use config: " + configFile);
+            var jsonfile = require('jsonfile');
+
+            var config = jsonfile.readFileSync(configFile);
+            console.log( "Config loaded: " + ( config ? "yes" : "no" ) );
+
+            var bootstrap = require("../impl/bootstrap" );
+            bootstrap(config);
+    });
+
+app.parse(process.argv);
 
 /*
 if (!cli.case) {

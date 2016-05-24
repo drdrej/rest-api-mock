@@ -14,6 +14,7 @@ var ParamMapper = require( "./impl/ParamMapper" );
 
 var Server = function( config ) {
     this.appState = {};
+    this.config = config;
 
     this.endpoints = new Endpoints();
 
@@ -69,8 +70,11 @@ Server.prototype.start = function ( ) {
     }
 
     // start server ...
-    this.server.listen( 8383, function () {
-        console.log("rest-api successful started. let's play" );
+    var port = (this.config.port ? this.config.port : 8383);
+    this.server.listen( port, function () {
+        console.log("rest-api successful started," );
+        console.log("... listen at port: " + port );
+        console.log("let's play!" );
     });
 };
 
