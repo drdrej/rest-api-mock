@@ -1,6 +1,6 @@
 module.exports = function() {
     return {
-        "arguments" : [],
+        "args" : [],
 
         "call" : function() {
             return { success: true };
