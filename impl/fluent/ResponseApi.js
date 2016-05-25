@@ -5,7 +5,7 @@ var ResponseApi = function( server, config ) {
     };
 
     this.response = function( arguments, callback ) {
-       server.endpoints.response( config, callback, arguments);
+        server.endpoints.response( config, callback, arguments);
     };
 
     this.forward = function( forwardUrl ) {

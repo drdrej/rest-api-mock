@@ -42,13 +42,15 @@ At this moment only one command 'run' is supported.
 With 'run' command you can run a server with usecase-configs.
 
 **Example: (usecase.json):**
+Mocky understands json, so you can declare your usecases. every usecase is a mock of a rest-api-endpoint call.
+
 ````json
 {
   "actions" : "../actions/*.js",
 
-  "story" : [{
+  "mocks" : [{
     "name": "endpoint-1",
-    "description": "simple get example to create an get-endpoint",
+    "description": "simple get example to create an get-endpoint", /* optional */
 
     "on" : {
       "endpoint": {
@@ -57,10 +59,10 @@ With 'run' command you can run a server with usecase-configs.
         "path": "/item/5"
       },
 
-      "log": true
+      "log": true /* optional | log = false is default.*/
     },
 
-    "action" : "simple-success-action"
+    "action" : "simple-success-action" /* required | name of action-file */
   },
 
   {
@@ -83,7 +85,7 @@ With 'run' command you can run a server with usecase-configs.
 # Use programmatically
 
 ## Initialize server
-````java
+````JavaScript
     var Mock = require( "rest-api-mock" );
 
     var mock = new Mock({
@@ -97,18 +99,15 @@ With 'run' command you can run a server with usecase-configs.
 
 ... returns an json-object in http-response.
 
-````java
+````JavaScript
 mock.on({
     name: "usecase-get-item-1",
-    description: "Usecase",
 
     endpoint : {
         method: "get",
         pattern: "/item/:id",
         path: "/item/5"
-    },
-
-    log: true
+    }
 }).response([
         "body:///json/path",
         "query://param1",
@@ -133,20 +132,15 @@ mock.on({
 Listen on path /fwd/1 (for pattern /fwd/:id) and forward request to passed url. In this example
 it will forward to "http://localhost:8383/item/5".
 
-````java
+````JavaScript
 mock.on({
-    name: "usecase-forward-to-original",
-    description: "...",
+    name: "usecase-forward",
 
     endpoint : {
         method: "get",
-
         pattern: "/fwd/:id",
-
         path: "/fwd/1"
     },
-
-    log: true
 }).forward( "http://localhost:8383/item/5" );
 
 ````
@@ -169,6 +163,7 @@ server.on({
     log: true
 }).error( 404, "This request is broken" );
 
+Second parameter is the error-message abd is optional.
 
 ````
 
