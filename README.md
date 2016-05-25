@@ -1,5 +1,7 @@
 # Moki - easy way to mock a rest-api
 
+**before v1.0.11** *this application was published as npm module called 'rest-api-mock'.*
+
 This CLI-application is a simple way to create mocks in nodejs.
 
 ######Important: (currently)
@@ -51,16 +53,20 @@ This json file with some mock-declarations inside we will call 'usecase'.
 }
 ````
 
+Save this content in a text file './usecases/usecase-1.json'.
 
-
-
-Save this content in a text file './usecases/usecase-1'.
 
 ### Run
 
-To run moki open command line and enter:
+To run moki with above described usecase open command line and enter:
 
    >moki run usecase-1
+
+Moki will resolve the name of usecase to a file, load the mock-declarations and start the server at
+http://localhost:8383/.
+
+To test the endpoint open in the browser this url:
+   http://localhost:8383/items
 
 
 ## More explanations
