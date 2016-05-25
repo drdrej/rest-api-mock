@@ -1,3 +1,3 @@
-# Run mocky examples
+# Run moki examples
 
-      /examples $ ../bin/mocky -c ./configs/simple.mocky.json run usecase-2
+      /examples $ ../bin/moki -c ./configs/simple.moki.json run usecase-2

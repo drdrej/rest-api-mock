@@ -1,4 +1,4 @@
-# Mocky a rest-api-mock
+# Moki - easy way to mock a rest-api
 
 This CLI-application is a simple way to create mocks in nodejs.
 
@@ -21,28 +21,28 @@ This CLI-application is a simple way to create mocks in nodejs.
 
 # Command-line usage
 
-Run mocky from
+Run moki from
 
-It is possible to run mocky (Command) to start a mock-server.
+It is possible to run moki (Command) to start a mock-server.
 If you have installed rest-api-mock with -g option, you can run
 it in this way:
 
 **Example:**
-     > mocky -c ./configs/simple.mocky.json run usecase-2
+     > moki -c ./configs/simple.moki.json run usecase-2
 
-In this example mocky runs a usecase called "usecase-2". Mocky resolves this name to path ./usecases/usecase-2.json.
+In this example moki runs a usecase called "usecase-2". Moki resolves this name to path ./usecases/usecase-2.json.
 There you can find the config for usecase/story. (TODO: need to clarify usecase vs story)
 
 **Options:**
 
-- c : path, relative to current directory. this path shows at mocky.json main config file for the server.
+- c : path, relative to current directory. this path shows at moki.json main config file for the server.
 
 **Command:**
 At this moment only one command 'run' is supported.
 With 'run' command you can run a server with usecase-configs.
 
 **Example: (usecase.json):**
-Mocky understands json, so you can declare your usecases. every usecase is a mock of a rest-api-endpoint call.
+Moki understands json, so you can declare your usecases. every usecase is a moki of a rest-api-endpoint call.
 
 ````json
 {
