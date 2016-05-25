@@ -3,10 +3,6 @@
   "name": "testsuite-3",
   "description": "to simulate a bug in issue#000",
 
-  "state" : { },
-
-  "actions" : "../actions/*.js",
-
   "mocks" : [{
     "name": "endpoint-1",
     "description": "simple get example to create an get-endpoint with 404 error",
