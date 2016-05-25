@@ -26,6 +26,13 @@ var ParamMapper = function( mappings ) {
         }
     }
 
+    if( !mappings
+          && mappings !== 0
+          && mappings !== false ) {
+
+          mappings = [];
+    }
+
     if( _.size( mappings ) < 1 ) {
         return this;
     }

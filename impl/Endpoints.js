@@ -27,6 +27,14 @@ var Endpoints = function() {
         return endpoint;
     };
 
+    this.ok = function(reqConfig, json) {
+        var endpoint = this.create( reqConfig );
+        endpoint.addOkCase(reqConfig, json);
+
+        return endpoint;
+    };
+
+
     /**
      * Create/Bind endpoints and usecases.
      */

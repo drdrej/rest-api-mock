@@ -21,6 +21,14 @@ Endpoint.prototype.addForwardCase = function(config, url) {
     });
 };
 
+Endpoint.prototype.addOkCase = function( config, json ) {
+    this.cases.push( {
+        bindType: 'Ok',
+        path: config.endpoint.path, // Path-Patterns und andere Matcher.
+        json: json
+    });
+};
+
 Endpoint.prototype.addErrCase = function( config, code, message ) {
     this.cases.push( {
         bindType: 'Error',
