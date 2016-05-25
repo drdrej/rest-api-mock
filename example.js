@@ -60,6 +60,23 @@ server.on({
 }).error( 404, "This request is broken" );
 
 server.on({
+    name: "err-example-3",
+    description: "error with message",
+
+    endpoint : {
+        method: "get",
+        pattern: "/err/:id", // TODO: maybe move to specs! here only usecase!!! match later...
+        path: "/err/3"
+    },
+
+    log: true
+}).error( 404, {
+    success: false,
+    customMsg: "This request is broken"
+} );
+
+
+server.on({
     name: "yyyy",
     description: "dasdasdasd",
 
