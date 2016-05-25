@@ -1,6 +1,7 @@
 var build = require("./build.json");
 var app = require('commander');
 
+
 app
     .version(build.version)
     .option('-c, --config <config>', 'config-file. (*.mocky.json) - optional')
@@ -10,6 +11,13 @@ app
 app
     .command('run <story>' )
     .action(function ( story ) {
+        console.log( "# Version: " + build.version );
+
+        console.log( "  ... runs a mock for your api." );
+        console.log( "(c) A.Siebert aka drdrej" );
+
+        console.log( "");
+        
         console.log('running usecase: "%s"', story);
 
         var cwd = process.cwd();
