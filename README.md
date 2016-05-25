@@ -1,10 +1,17 @@
-# rest-api-mock
+# Mocky a rest-api-mock
 
 This CLI-application is a simple way to create mocks in nodejs.
 
 ######Important: (currently)
 1. Experimental
 2. Not tested
+3. dev in progress (api is changing)
+
+## Goals
+
+* Simple way to setup a mocked rest-api.
+* Usefull for Web- & Mobile-developers to build rest-based clients without running a real server.
+
 
 ## Installation
 
@@ -13,6 +20,8 @@ This CLI-application is a simple way to create mocks in nodejs.
    **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console.
 
 # Command-line usage
+
+Run mocky from
 
 It is possible to run mocky (Command) to start a mock-server.
 If you have installed rest-api-mock with -g option, you can run
@@ -131,9 +140,9 @@ mock.on({
 
     endpoint : {
         method: "get",
-        
-        pattern: "/fwd/:id", 
-        
+
+        pattern: "/fwd/:id",
+
         path: "/fwd/1"
     },
 
@@ -142,6 +151,26 @@ mock.on({
 
 ````
 
+
+## Bad request
+
+````java
+
+server.on({
+    name: "err-example-2",
+    description: "error with message",
+
+    endpoint : {
+        method: "get",
+        pattern: "/err/:id", // TODO: maybe move to specs! here only usecase!!! match later...
+        path: "/err/2"
+    },
+
+    log: true
+}).error( 404, "This request is broken" );
+
+
+````
 
 
 ## Start mock

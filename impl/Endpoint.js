@@ -16,10 +16,17 @@ var Endpoint = function(endpoint) {
 Endpoint.prototype.addForwardCase = function(config, url) {
     this.cases.push( {
         bindType: 'Forward',
-
         path: config.endpoint.path, // Path-Patterns und andere Matcher.
-
         forwardUrl : url
+    });
+};
+
+Endpoint.prototype.addErrCase = function( config, code, message ) {
+    this.cases.push( {
+        bindType: 'Error',
+        path: config.endpoint.path, // Path-Patterns und andere Matcher.
+        code: code,
+        message: message
     });
 };
 

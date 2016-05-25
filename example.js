@@ -33,6 +33,31 @@ server.on({
         return { success: ("Test" + jsonPathVal + ":" + qP1 + ":" + fName1) };
     });
 
+server.on({
+    name: "err-example",
+    description: "...",
+
+    endpoint : {
+        method: "get",
+        pattern: "/err/:id", // TODO: maybe move to specs! here only usecase!!! match later...
+        path: "/err/1"
+    },
+
+    log: true
+}).error( 404 /*"error message xyz"*/ );
+
+server.on({
+    name: "err-example-2",
+    description: "error with message",
+
+    endpoint : {
+        method: "get",
+        pattern: "/err/:id", // TODO: maybe move to specs! here only usecase!!! match later...
+        path: "/err/2"
+    },
+
+    log: true
+}).error( 404, "This request is broken" );
 
 server.on({
     name: "yyyy",

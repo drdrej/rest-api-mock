@@ -1,7 +1,7 @@
 var ResponseApi = function( server, config ) {
 
-    this.error = function() {
-
+    this.error = function( code, msg ) {
+        server.endpoints.error( config, code, msg );
     };
 
     this.response = function( arguments, callback ) {

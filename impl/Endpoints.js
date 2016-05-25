@@ -17,6 +17,16 @@ var Endpoints = function() {
         return endpoint;
     };
 
+
+
+
+    this.error = function(reqConfig, code, message) {
+        var endpoint = this.create( reqConfig );
+        endpoint.addErrCase(reqConfig, code, message);
+
+        return endpoint;
+    };
+
     /**
      * Create/Bind endpoints and usecases.
      */
