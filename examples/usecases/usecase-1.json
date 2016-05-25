@@ -1,5 +1,5 @@
 {
-  "story" : [{
+  "mocks" : [{
     "on" : {
       "name": "endpoint-1",
       "description": "simple get example to create an get-endpoint",

@@ -2,10 +2,10 @@ var build = require("./build.json");
 var app = require('commander');
 
 app
-    .version(build.version) // .option('-c, --case <case>', 'Add jira case id (used as folder)')
-    .option('-c, --config <config>', 'path to mocky.json')
+    .version(build.version)
+    .option('-c, --config <config>', 'config-file. (*.mocky.json) - optional')
+    .option('-v, --version <version>', 'api version' )
     .option('-l, --log', 'Use log');
-
 
 app
     .command('run <story>' )
@@ -34,22 +34,3 @@ app
     });
 
 app.parse(process.argv);
-
-/*
- var log = function log(msg) {
- if( cli.log ) {
- console.log( msg );
- }
- };
-
-
-
-
- var usePort = function() {
- if( cli.port && cli.port > 0 ) {
- return cli.port;
- }
-
- return DEFAUL_PORT;
- };
- */

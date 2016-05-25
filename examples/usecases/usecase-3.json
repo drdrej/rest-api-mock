@@ -1,4 +1,10 @@
 {
+
+  "name": "testsuite-1",
+  "description": "to simulate a bug in issue#000",
+
+  "state" : { },
+
   "actions" : "../actions/*.js",
 
   "mocks" : [{
@@ -16,20 +22,6 @@
     },
 
     "action" : "simple-success-action"
-  },
-
-  {
-      "on" : {
-        "endpoint": {
-          "method": "get",
-          "pattern": "/fwd/:id",
-          "path": "/fwd/1"
-        },
-
-        "log": true
-      },
-
-      "action" : "http://localhost:8181/item/5"
   }]
 }
 

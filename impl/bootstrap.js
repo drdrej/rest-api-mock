@@ -82,7 +82,7 @@ module.exports = function(build, config, cwd, story) {
         var loaded = loadStory(cwd, story);
 
         var actionsPattern = loaded.actions;
-        var cases = loaded.story;
+        var cases = loaded.mocks;
 
         var _ = require( 'underscore' );
         _.each( cases, function( usecase ) {

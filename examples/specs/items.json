@@ -1,0 +1,27 @@
+{
+  "name" : "sadasd",
+  "description" : "",
+
+  "endpoints" : [
+    {
+      "endpoint": {
+        "method": "get",
+        "pattern": "/item/:id"
+      },
+
+      "query" : {
+         "name" : "value-type",
+         "isValid" : {
+
+         }
+      },
+
+      "params"  : {
+        "name" : "value"
+      }
+    }
+
+  ]
+
+
+}
