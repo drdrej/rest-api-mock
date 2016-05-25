@@ -21,7 +21,6 @@
     "bunyan": "~1.5.1",
     "chai": "^3.5.0",
     "commander": "^2.9.0",
-    "image-to-ascii": "^3.0.3",
     "jsonfile": "^2.3.1",
     "jsonpointer.js": "^0.4.0",
     "mocha": "^2.4.5",
