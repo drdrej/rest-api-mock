@@ -1,6 +1,6 @@
 {
 
-  "name": "testsuite-1",
+  "name": "testsuite-3",
   "description": "to simulate a bug in issue#000",
 
   "state" : { },
@@ -9,19 +9,18 @@
 
   "mocks" : [{
     "name": "endpoint-1",
-    "description": "simple get example to create an get-endpoint",
+    "description": "simple get example to create an get-endpoint with 404 error",
 
     "on" : {
       "endpoint": {
         "method": "get",
-        "pattern": "/item/:id",
-        "path": "/item/5"
+        "pattern": "/err/:id",
+        "path": "/err/2"
       },
 
       "log": true
     },
 
-    "action" : "simple-success-action"
+    "action" : 404
   }]
 }
-

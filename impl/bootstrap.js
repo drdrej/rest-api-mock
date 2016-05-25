@@ -36,37 +36,41 @@ function loadStory( cwd, story ) {
  */
 function setupUsecase(server, root, actions, usecase) {
     console.log( ".. setup usecase: " + usecase.name);
-
-    // currently only strings supported.
+    
     if( usecase.action ) {
         var S = require( "string" );
+        var _ = require( "underscore" );
 
-        if( S(usecase.action).startsWith( "http://" ) ) {
-            server.on(usecase.on).forward(usecase.action);
-            return;
+        if( _.isString( usecase.action ) ) {
+            if (S(usecase.action).startsWith("http://")) {
+                server.on(usecase.on).forward(usecase.action);
+                return;
+            } else {
+                var file;
+
+
+                var aPattern = S(actions);
+                var rel = aPattern.replaceAll('*', usecase.action).s;
+
+                var path = require("path");
+
+                console.log(">>> relative path.");
+                console.log("... root: " + root);
+                console.log("... rel: " + rel);
+
+                file = (path.dirname(root) + "/" + rel);
+                // file = path.resolve ... relative(root, rel));
+                // file = path.resolve();
+
+                var js = require(file);
+                var jsDef = js.apply();
+
+                server.on(usecase.on).response(jsDef.args, jsDef.call);
+
+                return;
+            }
         } else {
-            var file;
-
-
-            var aPattern = S( actions );
-            var rel = aPattern.replaceAll('*', usecase.action).s;
-
-            var path = require("path");
-
-            console.log(">>> relative path.");
-            console.log("... root: " + root);
-            console.log("... rel: " + rel);
-
-            file = (path.dirname(root) + "/" + rel);
-            // file = path.resolve ... relative(root, rel));
-            // file = path.resolve();
-
-            var js = require( file );
-            var jsDef = js.apply();
-
-            server.on(usecase.on).response(jsDef.args, jsDef.call);
-
-            return;
+            server.on(usecase.on).error( usecase.action ); // numbers will be interpreted as error mocks
         }
     } else
         throw "Not supported";
