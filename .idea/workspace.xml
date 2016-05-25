@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="rest-api-mock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="19">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -54,30 +54,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="38">
-                <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+                <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
                 <folding>
-                  <marker date="1464200038908" expanded="true" signature="1357:1939" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="1405:1937" placeholder="[...]" />
-                  <marker date="1464200038908" expanded="true" signature="1406:1712" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="1501:1515" placeholder="/*...*/" />
-                  <marker date="1464200038908" expanded="true" signature="1528:1667" placeholder="{&quot;log&quot;: true...}" />
-                  <marker date="1464200038908" expanded="true" signature="1548:1640" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="1717:1936" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="1732:1882" placeholder="{&quot;log&quot;: true...}" />
-                  <marker date="1464200038908" expanded="true" signature="1754:1852" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="2075:2106" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="2218:2354" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="2268:2352" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="2365:2450" placeholder="[...]" />
-                  <marker date="1464200038908" expanded="true" signature="2481:2602" placeholder="{...}" />
-                  <marker date="1464200038908" expanded="true" signature="2498:2595" placeholder="{&quot;success&quot;: true...}" />
-                  <marker date="1464200038908" expanded="true" signature="2829:2961" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-                  <marker date="1464200038908" expanded="true" signature="2876:2958" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="1357:1938" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="1405:1936" placeholder="[...]" />
+                  <marker date="1464200049604" expanded="true" signature="1406:1711" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="1501:1515" placeholder="/*...*/" />
+                  <marker date="1464200049604" expanded="true" signature="1528:1666" placeholder="{&quot;log&quot;: true...}" />
+                  <marker date="1464200049604" expanded="true" signature="1548:1640" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="1716:1935" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="1731:1881" placeholder="{&quot;log&quot;: true...}" />
+                  <marker date="1464200049604" expanded="true" signature="1753:1851" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="2074:2105" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="2217:2353" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="2267:2351" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="2364:2449" placeholder="[...]" />
+                  <marker date="1464200049604" expanded="true" signature="2480:2601" placeholder="{...}" />
+                  <marker date="1464200049604" expanded="true" signature="2497:2594" placeholder="{&quot;success&quot;: true...}" />
+                  <marker date="1464200049604" expanded="true" signature="2828:2960" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
+                  <marker date="1464200049604" expanded="true" signature="2875:2957" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -136,10 +136,10 @@
         <option value="$PROJECT_DIR$/bin/mocky" />
         <option value="$PROJECT_DIR$/bin/build.json" />
         <option value="$PROJECT_DIR$/bin/cli.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/,gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -333,7 +333,7 @@
       <workItem from="1464178824495" duration="1569000" />
       <workItem from="1464186437374" duration="5849000" />
       <workItem from="1464198476834" duration="577000" />
-      <workItem from="1464199533753" duration="505000" />
+      <workItem from="1464199533753" duration="979000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -413,7 +413,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65011000" />
+    <option name="totallyTimeSpent" value="65485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -428,12 +428,12 @@
     <frame x="-1" y="0" width="1362" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32460734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32460734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5966387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5966387" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -825,14 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/,gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
@@ -853,25 +845,25 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="38">
-            <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+            <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
             <folding>
-              <marker date="1464200038908" expanded="true" signature="1357:1939" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="1405:1937" placeholder="[...]" />
-              <marker date="1464200038908" expanded="true" signature="1406:1712" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="1501:1515" placeholder="/*...*/" />
-              <marker date="1464200038908" expanded="true" signature="1528:1667" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464200038908" expanded="true" signature="1548:1640" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="1717:1936" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="1732:1882" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464200038908" expanded="true" signature="1754:1852" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="2075:2106" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="2218:2354" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="2268:2352" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="2365:2450" placeholder="[...]" />
-              <marker date="1464200038908" expanded="true" signature="2481:2602" placeholder="{...}" />
-              <marker date="1464200038908" expanded="true" signature="2498:2595" placeholder="{&quot;success&quot;: true...}" />
-              <marker date="1464200038908" expanded="true" signature="2829:2961" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-              <marker date="1464200038908" expanded="true" signature="2876:2958" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="1357:1938" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="1405:1936" placeholder="[...]" />
+              <marker date="1464200049604" expanded="true" signature="1406:1711" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="1501:1515" placeholder="/*...*/" />
+              <marker date="1464200049604" expanded="true" signature="1528:1666" placeholder="{&quot;log&quot;: true...}" />
+              <marker date="1464200049604" expanded="true" signature="1548:1640" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="1716:1935" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="1731:1881" placeholder="{&quot;log&quot;: true...}" />
+              <marker date="1464200049604" expanded="true" signature="1753:1851" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="2074:2105" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="2217:2353" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="2267:2351" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="2364:2449" placeholder="[...]" />
+              <marker date="1464200049604" expanded="true" signature="2480:2601" placeholder="{...}" />
+              <marker date="1464200049604" expanded="true" signature="2497:2594" placeholder="{&quot;success&quot;: true...}" />
+              <marker date="1464200049604" expanded="true" signature="2828:2960" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
+              <marker date="1464200049604" expanded="true" signature="2875:2957" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -880,6 +872,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
