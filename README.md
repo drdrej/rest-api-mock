@@ -59,10 +59,10 @@ Mocky understands json, so you can declare your usecases. every usecase is a moc
         "path": "/item/5"
       },
 
-      "log": true /* optional | log = false is default.*/
+      "log": true
     },
 
-    "action" : "simple-success-action" /* required | name of action-file */
+    "action" : "simple-success-action"
   },
 
   {
@@ -156,16 +156,16 @@ server.on({
 
     endpoint : {
         method: "get",
-        pattern: "/err/:id", // TODO: maybe move to specs! here only usecase!!! match later...
+        pattern: "/err/:id",
         path: "/err/2"
     },
 
     log: true
 }).error( 404, "This request is broken" );
 
-Second parameter is the error-message abd is optional.
 
 ````
+Second parameter is the error-message abd is optional.
 
 
 ## Start mock
