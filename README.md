@@ -13,19 +13,59 @@ This CLI-application is a simple way to create mocks in nodejs.
 * Usefull for Web- & Mobile-developers to build rest-based clients without running a real server.
 
 
-## Installation
+## Getting started
 
-   > npm install --save rest-api-mock
+### Installation
+
+To install moki global accessible you can use this cli command:
+
+   > npm install -g moki
 
    **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console.
 
-# Command-line usage
+   Change to (project-) directory where you want to manage your rest-api mocks.
 
-Run moki from
 
-It is possible to run moki (Command) to start a mock-server.
-If you have installed rest-api-mock with -g option, you can run
-it in this way:
+### Configure mocks
+
+To create a mock for a specified rest-request you can use a json-based dsl.
+This json file with some mock-declarations inside we will call 'usecase'.
+
+**Example:**
+````json
+{
+  "mocks" : [{
+
+    "on" : {
+      "endpoint": {
+        "method": "get",
+        "pattern": "/items",
+
+        "path": "/items"
+      }
+
+    },
+
+    "action" : { "items" : ["Apple", "Pineapple"] }
+  }]
+}
+````
+
+
+
+
+Save this content in a text file './usecases/usecase-1'.
+
+### Run
+
+To run moki open command line and enter:
+
+   >moki run usecase-1
+
+
+## More explanations
+
+### Command-line usage
 
 **Example:**
      > moki -c ./configs/simple.moki.json run usecase-2
