@@ -2,6 +2,10 @@
 
 **before v1.0.11** *this application was published as npm module called 'rest-api-mock'.*
 
+Old project "rest-api-mock" is deprecated. i will leave it on npm.
+Please use moki as new module name.
+
+
 This CLI-application is a simple way to create mocks in nodejs.
 
 ######Important: (currently)
