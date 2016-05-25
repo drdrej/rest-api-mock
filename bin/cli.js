@@ -11,10 +11,11 @@ app
 app
     .command('run <story>' )
     .action(function ( story ) {
+        console.log( "----------------------------------------");
         console.log( "# Version: " + build.version );
-
+        console.log( "# (c) A.Siebert aka drdrej" );
+        console.log( "========================================");
         console.log( "  ... runs a mock for your api." );
-        console.log( "(c) A.Siebert aka drdrej" );
 
         console.log( "");
         
@@ -30,11 +31,29 @@ app
             configFile = (cwd + "/" + app.config);
         }
 
-        console.log("Use config: " + configFile);
+        console.log("# .. Use config: " + configFile);
         var jsonfile = require('jsonfile');
 
-        var config = jsonfile.readFileSync(configFile);
-        console.log("Config loaded: " + ( config ? "yes" : "no" ));
+        var config;
+
+         try {
+                 config = jsonfile.readFileSync(configFile, {
+                         throws: false
+                 });
+         } catch (e){
+                 console.log( "# .. ! couldn't load moki config file. use defaults." );
+         }
+
+        if( !config || config === null ) {
+            config = {
+              "name" : "Example",
+              "port" : 8181
+            };
+        }
+
+
+        console.log("# .. Config loaded: " + ( config ? "yes" : "no" ));
+        console.dir(config);
 
         var bootstrap = require("../impl/bootstrap");
 

@@ -66,7 +66,7 @@ Moki will resolve the name of usecase to a file, load the mock-declarations and 
 http://localhost:8383/.
 
 To test the endpoint open in the browser this url:
-   http://localhost:8383/items
+   http://localhost:8181/items
 
 
 ## More explanations
