@@ -136,7 +136,7 @@ Moki understands json, so you can declare your usecases. every usecase is a moki
 
 ## Initialize server
 ````JavaScript
-    var Mock = require( "rest-api-mock" );
+    var Mock = require( "moki" );
 
     var mock = new Mock({
         name: "Example"

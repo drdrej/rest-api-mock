@@ -49,6 +49,7 @@ server.on({
     function ( p1, p2, p3 ) {
         return {
             success: true,
+            values: "custom",
             p1: p1,
             p2: p2,
             p3: p3
@@ -67,7 +68,7 @@ server.on({
     },
 
     log: true
-}).response({
+}).ok({
     "success" : true,
     "buildBy" : "mock-get-json"
 });

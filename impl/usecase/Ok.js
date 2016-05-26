@@ -6,8 +6,8 @@ var _ = require( "underscore" );
 module.exports = function handle( usecase, inReq, inRes, inNext ) {
     var msg;
 
-    if( usecase.action ) {
-        msg = usecase.action;
+    if( usecase.json ) {
+        msg = usecase.json;
     } else {
         console.log( "!! no json for Ok-action passed. Use {} as default." );
         msg = {};
