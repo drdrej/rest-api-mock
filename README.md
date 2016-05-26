@@ -1,17 +1,13 @@
 # Moki - easy way to mock a rest-api
-
-**before v1.0.11** *this application was published as npm module called 'rest-api-mock'.*
-
-Old project "rest-api-mock" is deprecated. i will leave it on npm.
-Please use moki as new module name.
-
+[experimental]
 
 This CLI-application is a simple way to create mocks in nodejs.
 
-######Important: (currently)
-1. Experimental
-2. Not tested
-3. dev in progress (api is changing)
+### Attention:
+[![Build Status](https://travis-ci.org/drdrej/rest-api-mock.png?branch=master)](https://travis-ci.org/drdrej/app-buildr)
+
+This software is permanently in development, so please use it carefuly.
+
 
 ## Goals
 
@@ -247,6 +243,17 @@ mock.stop();
 
 ##  ???
 http://wiremock.org
+
+# Versioning
+
+I will use the 0.0.0 versioning pattern. I've started the publishing on npm with version 1.0.0. Even until this moment the application is not production stable. I plan to get usefull stability with the release 1.1.0. Until this moment i will increment the minor number with every publishing.
+
+## History
+
+**v.1.0.12** project (rest-api-mock) was renamed to moki and republished at npm.
+
+**before v1.0.11** *this application was published as npm module called 'rest-api-mock'.*
+
 
 # The MIT License (MIT)
 
