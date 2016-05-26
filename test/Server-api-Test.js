@@ -9,6 +9,32 @@ describe("Server HTTP Api", function() {
 
     server.on({
         name: "endpoint-get-1",
+        description: "this endpoint returns an error object with status code.",
+
+        endpoint : {
+            method: "get",
+            pattern: "/err/:id",
+            path: "/err/1"
+        }
+    }).error( 404, "GET doesn't work." );
+
+    server.on({
+        name: "endpoint-get-ok-1",
+        description: "this endpoint returns an error object with status code.",
+
+        endpoint : {
+            method: "get",
+            pattern: "/get/:id",
+            path: "/get/2"
+        }
+    }).ok( {
+        success: true,
+        name: "get-ok-1-json"
+    } );
+
+
+    server.on({
+        name: "endpoint-get-1",
         description: "this endpoint returns a { success : true }.",
 
         endpoint : {
@@ -20,7 +46,10 @@ describe("Server HTTP Api", function() {
         log: true
     }).response([],
         function ( ) {
-            return { success: true };
+            return {
+                success: true,
+                name: "get-1-json"
+            };
         });
 
 
@@ -30,12 +59,15 @@ describe("Server HTTP Api", function() {
 
         endpoint : {
             method: "get",
-            pattern: "/fwd/:id", // TODO: maybe move to specs! here only usecase!!! match later...
+            pattern: "/fwd/:id",
             path: "/fwd/1"
         },
 
         log: true
     }).forward( "http://localhost:8383/get/1" );
+
+
+    // ================================= init cliend ================================================
 
     var restify = require( "restify" );
 
@@ -57,6 +89,21 @@ describe("Server HTTP Api", function() {
 
 
     // ------------------ test-cases ---------------------
+    describe("get-endpoint has error", function() {
+
+        it( "get", function( done ) {
+
+            client.get('/err/1', function(err, req, res, obj) {
+                assert.ifError( !err );
+                assert.equal( 404, res.statusCode );
+
+                done();
+            });
+
+        });
+
+    });
+
     describe("get-endpoint exists", function() {
 
         it( "get", function( done ) {
@@ -102,7 +149,7 @@ describe("Server HTTP Api", function() {
         function() {
 
         it( "get", function( done ) {
-            client.get('/get/2', function(err, req, res, obj) {
+            client.get('/get/-1', function(err, req, res, obj) {
                 assert.ifError( err);
                 assert.equal( 200, res.statusCode );
 

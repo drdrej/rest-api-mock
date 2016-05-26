@@ -25,7 +25,7 @@ module.exports = function handle( usecase, inReq, inRes, inNext ) {
 
     fwdReq.end(
         function success(response) {
-            console.log(response);
+            /* console.log(response); */
 
             inRes.send(response.body); // BODY copy without modifications.
 

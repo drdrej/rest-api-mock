@@ -10,7 +10,10 @@ module.exports = function handle( usecase, inReq, inRes, inNext ) {
         msg = usecase.message;
     }
 
-    inRes.status( usecase.code );
+    if( usecase.code && usecase.code > 399 )
+        inRes.status( usecase.code );
+    else
+        inRes.status( 500 ); // default error code
 
     if( _.isString(usecase.message) ) {
         inRes.send({

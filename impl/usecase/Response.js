@@ -23,4 +23,4 @@ module.exports = function handle( usecase, inReq, inRes, inNext ) {
     inRes.send(json);
 
     return inNext();
-}
+};

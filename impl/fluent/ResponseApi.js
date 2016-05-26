@@ -16,8 +16,6 @@ var ResponseApi = function( server, config ) {
         } else if( _.isArray(arguments)
                    && _.isFunction(callback)) {
             server.endpoints.response(config, callback, arguments);
-        /*} else if( _.isObject(arguments) ) {
-            server.endpoints.ok(config, arguments);*/
         } else {
             // server.endpoints.response(config, callback, arguments);
             throw new Error( "unsupported response?");
