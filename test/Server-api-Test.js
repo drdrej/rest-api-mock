@@ -66,6 +66,25 @@ describe("Server HTTP Api", function() {
         log: true
     }).forward( "http://localhost:8383/get/1" );
 
+    server.on({
+        name: "endpoint-post-1",
+        description: "this endpoint returns a { success : true }.",
+
+        endpoint : {
+            method: "post",
+            pattern: "/post/:id",
+            path: "/post/1"
+        },
+
+        log: true
+    }).response([],
+        function ( ) {
+            return {
+                success: true,
+                name: "post-1-json"
+            };
+        });
+
 
     // ================================= init cliend ================================================
 
@@ -123,7 +142,6 @@ describe("Server HTTP Api", function() {
     });
 
     describe("fwd-endpoint exists", function() {
-
         it( "get", function( done ) {
             client.get('/fwd/1', function(err, req, res, obj) {
                 assert.ifError( err);
@@ -136,8 +154,24 @@ describe("Server HTTP Api", function() {
             });
 
         });
-
     });
+
+    describe("post-endpoint exists", function() {
+
+        it( "post", function( done ) {
+            client.post('/post/1', function(err, req, res, obj) {
+                assert.ifError( err);
+                assert.equal( 200, res.statusCode );
+
+                assert.isDefined(obj, 'has response object');
+                assert.isDefined(obj.success, "response object has property 'success'." );
+
+                done();
+            });
+
+        });
+    });
+
 /*
     describe("get-endpoint not exists", function() {
 
