@@ -22,18 +22,46 @@ describe("Do POST-Requests with different params to check param-handling.", func
         "path://id",
         "query://name"
     ],
-        function ( p, q ) {
+        function ( p, q, b ) {
             return {
                 success: true,
                 name: "mock://get-1",
 
                 p : "path=" + p,
-                q : "query=" + q
+                q : "query=" + q,
+                b : "body=" + b
+            };
+        });
+
+    server.on({
+        name: "mock://post-1",
+        description: "inject path param",
+
+        endpoint : {
+            method: "post",
+            pattern: "/post/:id",
+            path: "/post/1"
+        },
+
+        log: true
+    }).response([
+            "path://id",
+            "query://name",
+            "body://person/age"
+        ],
+        function ( p, q, b ) {
+            return {
+                success: true,
+                name: "mock://post-1",
+
+                p : "path=" + p,
+                q : "query=" + q,
+                b : "body=" + b
             };
         });
 
 
-    // ================================= init cliend ================================================
+    // ================================= init client ================================================
 
     var restify = require( "restify" );
 
@@ -79,8 +107,7 @@ describe("Do POST-Requests with different params to check param-handling.", func
     });
 
     describe("get with path param=1, query=xyz", function() {
-
-        it( "get", function( done ) {
+        it( "is successful", function( done ) {
             client.get('/get/1?name=xyz',
                 function(err, req, res, obj) {
 
@@ -101,6 +128,40 @@ describe("Do POST-Requests with different params to check param-handling.", func
         });
 
     });
+
+
+    describe("post with path param=1, query=xyz, body=/person/age/42", function() {
+        it( "is successful", function( done ) {
+            client.post('/post/1',
+                {
+                    person: {
+                        age: 42
+                    }
+                },
+
+                function(err, req, res, obj) {
+
+                    assert.ifError( err);
+                    assert.equal( 200, res.statusCode );
+
+                    assert.isDefined(obj, 'has response object');
+                    assert.isDefined(obj.success, "response object has property 'success'." );
+
+                    assert.isDefined(obj.q, "response object has property 'q'." );
+                    assert.equal("query=undefined", obj.q);
+
+                    assert.isDefined(obj.p, "response object has property 'p'." );
+                    assert.equal("path=1", obj.p);
+
+                    assert.isDefined(obj.b, "response object has property 'b'." );
+                    assert.equal("body=42", obj.b);
+
+                    done();
+                });
+        });
+
+    });
+
 
 
 });

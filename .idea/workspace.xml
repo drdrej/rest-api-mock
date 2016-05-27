@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impl/ParamMapper.js" afterPath="$PROJECT_DIR$/impl/ParamMapper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" afterPath="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
     </list>
     <ignored path="rest-api-mock.iws" />
@@ -28,53 +27,18 @@
       <file leaf-file-name="Server-api-ParameterMappingTest.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="371">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-                <folding>
-                  <marker date="1464371884941" expanded="true" signature="1026:1232" placeholder="{...}" />
-                  <marker date="1464371884941" expanded="true" signature="1040:1230" placeholder="[...]" />
-                  <marker date="1464371884941" expanded="true" signature="1041:1229" placeholder="{...}" />
-                  <marker date="1464371884941" expanded="true" signature="1055:1171" placeholder="{...}" />
-                  <marker date="1464371884941" expanded="true" signature="1075:1164" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="2335:2901" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="2383:2899" placeholder="[...]" />
-                  <marker date="1464371884941" expanded="true" signature="2384:2674" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="2491:2629" placeholder="{&quot;log&quot;: true...}" />
-                  <marker date="1464371884941" expanded="true" signature="2511:2603" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="2679:2898" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="2694:2844" placeholder="{&quot;log&quot;: true...}" />
-                  <marker date="1464371884941" expanded="true" signature="2716:2814" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="3028:3059" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="3171:3307" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="3221:3305" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="3318:3403" placeholder="[...]" />
-                  <marker date="1464371884941" expanded="true" signature="3434:3555" placeholder="{...}" />
-                  <marker date="1464371884941" expanded="true" signature="3451:3548" placeholder="{&quot;success&quot;: true...}" />
-                  <marker date="1464371884941" expanded="true" signature="3782:3914" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-                  <marker date="1464371884941" expanded="true" signature="3829:3911" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Server-api-Test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Server-api-Test.js">
+      <file leaf-file-name="ServerTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/ServerTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="190" column="15" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
+            <state relative-caret-position="35">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,8 +67,8 @@
       <file leaf-file-name="ParamMapper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+            <state relative-caret-position="68">
+              <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -170,9 +134,9 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/impl/cli/cli.js" />
         <option value="$PROJECT_DIR$/server-v1.js" />
-        <option value="$PROJECT_DIR$/impl/ParamMapper.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/impl/ParamMapper.js" />
         <option value="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
       </list>
     </option>
@@ -245,7 +209,23 @@
       <recent name="$PROJECT_DIR$/impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.tests -all">
+  <component name="RunManager" selected="Mocha.Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42">
+    <configuration default="false" name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>/usr/bin/node</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js</test-file>
+      <test-names>
+        <name value="Do POST-Requests with different params to check param-handling." />
+        <name value="post with path param=1, query=xyz, body=/person/age/42" />
+      </test-names>
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -319,11 +299,17 @@
     <configuration default="false" name="Mockinator -example.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="$PROJECT_DIR$/examples/example.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Mocha.tests -all" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.examples" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.Mockinator -example.js" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Mocha.Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -365,7 +351,7 @@
       <workItem from="1464265256104" duration="352000" />
       <workItem from="1464269744078" duration="5194000" />
       <workItem from="1464350642983" duration="2774000" />
-      <workItem from="1464364092318" duration="6542000" />
+      <workItem from="1464364092318" duration="8429000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -413,39 +399,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_-all - 2016.05.27 at 19h 29m 18s.xml">
+    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 32m 48s.xml">
+      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 32m 55s.xml">
+      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 39m 48s.xml">
+      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 40m 33s.xml">
+      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 41m 06s.xml">
+      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 42m 25s.xml">
+      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests_-all - 2016.05.27 at 20h 33m 42s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 30m 51s.xml">
+    <history-entry file="tests_-all - 2016.05.27 at 20h 37m 11s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 33m 54s.xml">
+    <history-entry file="tests_-all - 2016.05.27 at 20h 42m 32s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 33m 55s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 34m 00s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 43m 36s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 43m 37s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 46m 54s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 50m 13s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 58m 16s.xml">
+    <history-entry file="tests_-all - 2016.05.27 at 20h 43m 08s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87102000" />
+    <option name="totallyTimeSpent" value="88989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,7 +455,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4722689" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7596639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -487,7 +473,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66567385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -495,7 +481,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4722689" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7596639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -536,12 +522,30 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js</url>
-          <line>72</line>
+          <line>100</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/impl/ParamMapper.js</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/impl/ParamMapper.js</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/impl/ParamMapper.js</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -557,13 +561,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/jsLibraryMappings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -583,20 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ServerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ParamMapperTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -724,13 +707,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/example-v1.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/restify/lib/clients/json_client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="90" column="8" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/chai/lib/chai/interface/assert.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
@@ -869,22 +845,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Server-api-Test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="190" column="15" selection-start-line="190" selection-start-column="15" selection-end-line="190" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -931,10 +891,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/restify/lib/clients/json_client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ServerTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/ParamMapperTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/NodeJS/js/mocha-intellij/lib/mochaIntellijUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Server-api-Test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="371">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
       </provider>

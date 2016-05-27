@@ -52,6 +52,8 @@ function _chooseParamType( mapping ) {
         return 'params';
     } else if( mapping.type === "query" ) {
         return "query";
+    } else if( mapping.type === "body" || mapping.type === "json") {
+        return "body";
     } else {
         throw Error( "broken param type: " + mapping.type );
     }
@@ -61,22 +63,33 @@ ParamMapper.prototype._get = function(httpReq, mapping) {
     var type = _chooseParamType(mapping)
     var params = httpReq[type];
 
-    if( !params ) {
-        console.warn( "!! params-object of type " + mapping.type + " is not defined." );
+    if (!params) {
+        console.warn("!! params-object of type " + mapping.type + " is not defined.");
         return;
     }
 
-    if( !mapping.key ) {
-        console.error( "!! mapping has no key." );
+    if (!mapping.key) {
+        console.error("!! mapping has no key.");
         return;
     }
 
-    var rval = params[mapping.key];
+    var S = require( "string" );
 
-    // TODO: trace it
-    console.log( ".. inject param: " + mapping.type + "://" + mapping.key + " = " + rval);
+    if( !S(mapping.key).startsWith( "/" ) )
+        mapping.key = "/" + mapping.key;
 
-    return rval;
+    try {
+        var jsonpointer = require('jsonpointer.js');
+
+        var rval = jsonpointer.get(params, mapping.key);
+        console.log(".. inject param: " + mapping.type + "://" + mapping.key + " = " + rval);
+
+        return rval;
+    } catch(e) {
+        console.error( "ERROR: " + e );
+        console.error( e );
+        return undefined;
+    }
 };
 
 ParamMapper.prototype.map = function ( httpReq ) {
