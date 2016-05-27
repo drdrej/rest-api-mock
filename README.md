@@ -1,4 +1,6 @@
 # Moki - [experimental]
+
+[![Join the chat at https://gitter.im/drdrej/rest-api-mock](https://badges.gitter.im/drdrej/rest-api-mock.svg)](https://gitter.im/drdrej/rest-api-mock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *... mocks your backend*
 
 Moki is an easy way to mock a rest-api and is usefull for Web- & Mobile-developers
