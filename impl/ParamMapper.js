@@ -42,13 +42,24 @@ var ParamMapper = function( mappings ) {
     }, this);
 };
 
-ParamMapper.prototype._get = function(httpReq, mapping) {
+function _chooseParamType( mapping ) {
     if( !mapping.type ) {
-         console.error( "!! param-type is not supported." );
-         return;
+        console.error( "!! param-type is not supported." );
+        return;
     }
 
-    var params = httpReq[mapping.type];
+    if( mapping.type === "path" ) {
+        return 'params';
+    } else if( mapping.type === "query" ) {
+        return "query";
+    } else {
+        throw Error( "broken param type: " + mapping.type );
+    }
+}
+
+ParamMapper.prototype._get = function(httpReq, mapping) {
+    var type = _chooseParamType(mapping)
+    var params = httpReq[type];
 
     if( !params ) {
         console.warn( "!! params-object of type " + mapping.type + " is not defined." );
@@ -60,7 +71,12 @@ ParamMapper.prototype._get = function(httpReq, mapping) {
         return;
     }
 
-    return httpReq[mapping.key];
+    var rval = params[mapping.key];
+
+    // TODO: trace it
+    console.log( ".. inject param: " + mapping.type + "://" + mapping.key + " = " + rval);
+
+    return rval;
 };
 
 ParamMapper.prototype.map = function ( httpReq ) {
