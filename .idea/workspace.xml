@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/CLI.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/MOCK_Static_get_Response.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/MOCK_setup_programmatically.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="rest-api-mock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,62 +26,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server-api-ParameterMappingTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-              <folding />
+      <file leaf-file-name="MOCK_Static_get_Response.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/MOCK_Static_get_Response.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+                <folding>
+                  <marker date="1464375431133" expanded="true" signature="1151:1356" placeholder="{...}" />
+                  <marker date="1464375431133" expanded="true" signature="1165:1354" placeholder="[...]" />
+                  <marker date="1464375431133" expanded="true" signature="1166:1353" placeholder="{...}" />
+                  <marker date="1464375431133" expanded="true" signature="1180:1295" placeholder="{...}" />
+                  <marker date="1464375431133" expanded="true" signature="1200:1288" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServerTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ServerTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Response.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/impl/Response.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Response.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/impl/usecase/Response.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ParamMapper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
-              <folding />
+      <file leaf-file-name="MOCK_setup_programmatically.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/MOCK_setup_programmatically.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+                <folding>
+                  <marker date="1464375446701" expanded="true" signature="120:151" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
+                  <marker date="1464375446701" expanded="true" signature="263:399" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
+                  <marker date="1464375446701" expanded="true" signature="313:397" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464375446701" expanded="true" signature="410:495" placeholder="[...]" />
+                  <marker date="1464375446701" expanded="true" signature="526:646" placeholder="{...}" />
+                  <marker date="1464375446701" expanded="true" signature="543:639" placeholder="{&quot;success&quot;: true...}" />
+                  <marker date="1464375446701" expanded="true" signature="869:1001" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
+                  <marker date="1464375446701" expanded="true" signature="916:998" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -98,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/impl/ParamUrlMapper.js" />
         <option value="$PROJECT_DIR$/test/ParamMapperTest.js" />
         <option value="$PROJECT_DIR$/impl/Body.js" />
         <option value="$PROJECT_DIR$/impl/mock-config.default.json.js" />
@@ -143,10 +139,13 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/impl/cli/cli.js" />
         <option value="$PROJECT_DIR$/server-v1.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/impl/ParamMapper.js" />
         <option value="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/docs/MOCK_Static_get_Response.md" />
+        <option value="$PROJECT_DIR$/docs/CLI.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/docs/MOCK_setup_programmatically.md" />
       </list>
     </option>
   </component>
@@ -202,6 +201,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,7 +390,7 @@
       <workItem from="1464265256104" duration="352000" />
       <workItem from="1464269744078" duration="5194000" />
       <workItem from="1464350642983" duration="2774000" />
-      <workItem from="1464364092318" duration="8502000" />
+      <workItem from="1464364092318" duration="9167000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -457,7 +470,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89062000" />
+    <option name="totallyTimeSpent" value="89727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -472,14 +485,14 @@
     <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.66567385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.263589" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.702521" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7596639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -499,9 +512,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66567385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.263589" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.702521" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -587,21 +600,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/jsLibraryMappings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impl/ParamUrlMapper.js" />
-    <entry file="file://$PROJECT_DIR$/impl/Body.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/impl/mock-config.default.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -855,72 +853,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impl/Response.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/impl/usecase/Response.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-            <folding>
-              <marker date="1464371884941" expanded="true" signature="1026:1232" placeholder="{...}" />
-              <marker date="1464371884941" expanded="true" signature="1040:1230" placeholder="[...]" />
-              <marker date="1464371884941" expanded="true" signature="1041:1229" placeholder="{...}" />
-              <marker date="1464371884941" expanded="true" signature="1055:1171" placeholder="{...}" />
-              <marker date="1464371884941" expanded="true" signature="1075:1164" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="2335:2901" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="2383:2899" placeholder="[...]" />
-              <marker date="1464371884941" expanded="true" signature="2384:2674" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="2491:2629" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464371884941" expanded="true" signature="2511:2603" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="2679:2898" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="2694:2844" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464371884941" expanded="true" signature="2716:2814" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="3028:3059" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="3171:3307" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="3221:3305" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="3318:3403" placeholder="[...]" />
-              <marker date="1464371884941" expanded="true" signature="3434:3555" placeholder="{...}" />
-              <marker date="1464371884941" expanded="true" signature="3451:3548" placeholder="{&quot;success&quot;: true...}" />
-              <marker date="1464371884941" expanded="true" signature="3782:3914" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-              <marker date="1464371884941" expanded="true" signature="3829:3911" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/restify/lib/clients/json_client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ServerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -949,10 +885,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -965,11 +901,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/test/ServerTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impl/Response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impl/usecase/Response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="83" column="7" selection-start-line="83" selection-start-column="7" selection-end-line="83" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/MOCK_Static_get_Response.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/CLI.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+            <folding>
+              <marker date="1464375374561" expanded="true" signature="699:1265" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
+              <marker date="1464375374561" expanded="true" signature="747:1263" placeholder="[...]" />
+              <marker date="1464375374561" expanded="true" signature="748:1038" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
+              <marker date="1464375374561" expanded="true" signature="855:993" placeholder="{&quot;log&quot;: true...}" />
+              <marker date="1464375374561" expanded="true" signature="875:967" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464375374561" expanded="true" signature="1043:1262" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
+              <marker date="1464375374561" expanded="true" signature="1058:1208" placeholder="{&quot;log&quot;: true...}" />
+              <marker date="1464375374561" expanded="true" signature="1080:1178" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+            <folding>
+              <marker date="1464375431133" expanded="true" signature="1151:1356" placeholder="{...}" />
+              <marker date="1464375431133" expanded="true" signature="1165:1354" placeholder="[...]" />
+              <marker date="1464375431133" expanded="true" signature="1166:1353" placeholder="{...}" />
+              <marker date="1464375431133" expanded="true" signature="1180:1295" placeholder="{...}" />
+              <marker date="1464375431133" expanded="true" signature="1200:1288" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/MOCK_setup_programmatically.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+            <folding>
+              <marker date="1464375446701" expanded="true" signature="120:151" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
+              <marker date="1464375446701" expanded="true" signature="263:399" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
+              <marker date="1464375446701" expanded="true" signature="313:397" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464375446701" expanded="true" signature="410:495" placeholder="[...]" />
+              <marker date="1464375446701" expanded="true" signature="526:646" placeholder="{...}" />
+              <marker date="1464375446701" expanded="true" signature="543:639" placeholder="{&quot;success&quot;: true...}" />
+              <marker date="1464375446701" expanded="true" signature="869:1001" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
+              <marker date="1464375446701" expanded="true" signature="916:998" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
