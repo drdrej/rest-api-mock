@@ -4,11 +4,26 @@
 Moki is an easy way to mock a rest-api and is usefull for Web- & Mobile-developers
 to build rest-based clients without the needs to run a real server.
 
-### Attention:
+### Status
 [![Build Status](https://travis-ci.org/drdrej/rest-api-mock.png?branch=master)](https://travis-ci.org/drdrej/app-buildr)
-*This software is permanently in development, so please use it carefuly.*
+[![HitCount](https://hitt.herokuapp.com/{username||org}/{project-name}.svg)](https://github.com/{username||org}/{project-name})
+
+**Important:** *This software is permanently in development, so please use it carefuly.*
 
 **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console. currently i test this project only until v5.
+
+
+## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
+
+Frontend-developers doesn't like to work with broken services.
+They prefer to write UI code and expects a full working service with predictable behaviour.
+Later, if a product has a bug and for example fails in user acceptance tests, then a frontend-developer
+ is the first instance who will be asked by the customer. The web-developer has to explain why the application doesn't
+ work as expected. Even if the problem is a produced by a broken service.
+
+Moki is a way to setup a rest-api with static (and dynamic) responses. So a web-developer get simple
+a way to develop against a not implemented service. Web-developer can configure response in different way,
+depends on a catched request and matched parameters.
 
 ## Goals & Features
 
