@@ -77,9 +77,9 @@ To test the endpoint open in the browser this url:
 **Important:** http-Port is configurable
 
 ## More docs
-* [CLI](https://github.com/drdrej/rest-api-mock/blob/CLI.md)
-* [Static get response](https://github.com/drdrej/rest-api-mock/blob/MOCK_Static_get_Response.md)
-* [More docs](https://github.com/drdrej/rest-api-mock/blob/MOCK_setup_programmatically.md)
+* [CLI](https://github.com/drdrej/rest-api-mock/blob/master/docs/CLI.md)
+* [Static get response](https://github.com/drdrej/rest-api-mock/blob/master/docs/MOCK_Static_get_Response.md)
+* [More docs](https://github.com/drdrej/rest-api-mock/blob/master/docs/MOCK_setup_programmatically.md)
 
 # Another Mock-Servers
 
