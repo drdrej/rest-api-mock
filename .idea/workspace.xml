@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/CLI.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/MOCK_Static_get_Response.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/MOCK_setup_programmatically.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="rest-api-mock.iws" />
@@ -39,18 +37,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <first_editor relative-caret-position="317">
+                <caret line="78" column="99" selection-start-line="78" selection-start-column="99" selection-end-line="78" selection-end-column="99" />
                 <folding>
-                  <marker date="1464375431133" expanded="true" signature="1151:1356" placeholder="{...}" />
-                  <marker date="1464375431133" expanded="true" signature="1165:1354" placeholder="[...]" />
-                  <marker date="1464375431133" expanded="true" signature="1166:1353" placeholder="{...}" />
-                  <marker date="1464375431133" expanded="true" signature="1180:1295" placeholder="{...}" />
-                  <marker date="1464375431133" expanded="true" signature="1200:1288" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464375601117" expanded="true" signature="1151:1356" placeholder="{...}" />
+                  <marker date="1464375601117" expanded="true" signature="1165:1354" placeholder="[...]" />
+                  <marker date="1464375601117" expanded="true" signature="1166:1353" placeholder="{...}" />
+                  <marker date="1464375601117" expanded="true" signature="1180:1295" placeholder="{...}" />
+                  <marker date="1464375601117" expanded="true" signature="1200:1288" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -58,12 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MOCK_setup_programmatically.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MOCK_setup_programmatically.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/MOCK_setup_programmatically.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+              <first_editor relative-caret-position="150">
+                <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                 <folding>
                   <marker date="1464375446701" expanded="true" signature="120:151" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
                   <marker date="1464375446701" expanded="true" signature="263:399" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
@@ -144,8 +142,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/docs/MOCK_Static_get_Response.md" />
         <option value="$PROJECT_DIR$/docs/CLI.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docs/MOCK_setup_programmatically.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -390,7 +388,7 @@
       <workItem from="1464265256104" duration="352000" />
       <workItem from="1464269744078" duration="5194000" />
       <workItem from="1464350642983" duration="2774000" />
-      <workItem from="1464364092318" duration="9167000" />
+      <workItem from="1464364092318" duration="9320000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -470,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89727000" />
+    <option name="totallyTimeSpent" value="89880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -492,7 +490,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29915968" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7596639" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -964,33 +962,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-            <folding>
-              <marker date="1464375431133" expanded="true" signature="1151:1356" placeholder="{...}" />
-              <marker date="1464375431133" expanded="true" signature="1165:1354" placeholder="[...]" />
-              <marker date="1464375431133" expanded="true" signature="1166:1353" placeholder="{...}" />
-              <marker date="1464375431133" expanded="true" signature="1180:1295" placeholder="{...}" />
-              <marker date="1464375431133" expanded="true" signature="1200:1288" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/MOCK_setup_programmatically.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <first_editor relative-caret-position="150">
+            <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
             <folding>
               <marker date="1464375446701" expanded="true" signature="120:151" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
               <marker date="1464375446701" expanded="true" signature="263:399" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
@@ -1000,6 +976,28 @@
               <marker date="1464375446701" expanded="true" signature="543:639" placeholder="{&quot;success&quot;: true...}" />
               <marker date="1464375446701" expanded="true" signature="869:1001" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
               <marker date="1464375446701" expanded="true" signature="916:998" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="317">
+            <caret line="78" column="99" selection-start-line="78" selection-start-column="99" selection-end-line="78" selection-end-column="99" />
+            <folding>
+              <marker date="1464375601117" expanded="true" signature="1151:1356" placeholder="{...}" />
+              <marker date="1464375601117" expanded="true" signature="1165:1354" placeholder="[...]" />
+              <marker date="1464375601117" expanded="true" signature="1166:1353" placeholder="{...}" />
+              <marker date="1464375601117" expanded="true" signature="1180:1295" placeholder="{...}" />
+              <marker date="1464375601117" expanded="true" signature="1200:1288" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
             </folding>
           </first_editor>
           <second_editor />

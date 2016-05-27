@@ -76,6 +76,8 @@ To test the endpoint open in the browser this url:
 
 **Important:** http-Port is configurable
 
+[]More docs | https://github.com/drdrej/rest-api-mock/edit/master/docs/MOCK_Static_get_Response.md]
+
 # Another Mock-Servers
 
 * https://www.npmjs.com/package/mock-restful
