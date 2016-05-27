@@ -5,7 +5,7 @@
  */
 
 // import api:
-var Server = require("./server.js" );
+var Server = require("./../server.js" );
 
 // creates a server instance
 var server = new Server({
