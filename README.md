@@ -13,6 +13,11 @@ to build rest-based clients without the needs to run a real server.
 **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console. currently i test this project only until v5.
 
 
+### more badges
+[![Dependency Status](https://david-dm.org/drdrej/moki.svg)](https://david-dm.org/drdrej/moki)
+
+
+
 ## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
 
 Frontend-developers doesn't like to work with broken services.
