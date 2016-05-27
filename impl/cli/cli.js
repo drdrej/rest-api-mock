@@ -55,7 +55,7 @@ app
         console.log("# .. Config loaded: " + ( config ? "yes" : "no" ));
         console.dir(config);
 
-        var bootstrap = require("../impl/bootstrap/bootstrap");
+        var bootstrap = require("../bootstrap/bootstrap");
 
         bootstrap(build, config, cwd, story);
     });
