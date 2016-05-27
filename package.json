@@ -1,6 +1,6 @@
 {
   "name": "moki",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "a CLI-application & js-framework to build a mock of a restful api.",
   "main": "server.js",
 
