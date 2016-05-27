@@ -7,15 +7,13 @@ to build rest-based clients without the needs to run a real server.
 ### Status
 [![Build Status](https://travis-ci.org/drdrej/rest-api-mock.png?branch=master)](https://travis-ci.org/drdrej/app-buildr)
 [![HitCount](https://hitt.herokuapp.com/{username||org}/{project-name}.svg)](https://github.com/{username||org}/{project-name})
+[![Gitter](https://badges.gitter.im/drdrej/rest-api-mock.svg)](https://gitter.im/drdrej/rest-api-mock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Dependency Status](https://david-dm.org/drdrej/rest-api-mock.svg)](https://david-dm.org/drdrej/rest-api-mock)
 
 **Important:** *This software is permanently in development, so please use it carefuly.*
 
 **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console. currently i test this project only until v5.
 
-
-### more badges
-[![Gitter](https://badges.gitter.im/drdrej/rest-api-mock.svg)](https://gitter.im/drdrej/rest-api-mock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Dependency Status](https://david-dm.org/drdrej/moki.svg)](https://david-dm.org/drdrej/moki)
 
 
 
