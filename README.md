@@ -14,6 +14,7 @@ to build rest-based clients without the needs to run a real server.
 
 
 ### more badges
+[![Gitter](https://badges.gitter.im/drdrej/rest-api-mock.svg)](https://gitter.im/drdrej/rest-api-mock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Dependency Status](https://david-dm.org/drdrej/moki.svg)](https://david-dm.org/drdrej/moki)
 
 
