@@ -100,24 +100,31 @@ To test the endpoint open in the browser this url:
 * [Static get response](https://github.com/drdrej/rest-api-mock/blob/master/docs/MOCK_Static_get_Response.md)
 * [More docs](https://github.com/drdrej/rest-api-mock/blob/master/docs/MOCK_setup_programmatically.md)
 
-# Another Mock-Servers
+# Alternative solutions
 
+There are already some solutions on the market. Check them out. (*List ist not complete*)
+
+## Node based solutions
 * https://www.npmjs.com/package/mock-restful
 * https://www.npmjs.com/package/api-mock
 * https://www.npmjs.com/package/mock-rest-request
 * https://github.com/typicode/json-server
 * http://www.mock-json-api.com/
+
+## More mocking servers
 * http://www.mock-server.com/where/npm.html
+http://wiremock.org
 
-
-## for swagger
+## Swagger based mocks
 * https://www.npmjs.com/package/swagger-mock
 * https://github.com/dzdrazil/swagger-mock-api
 * https://www.npmjs.com/package/swagger-server
 
+## Services
+* https://www.mockable.io/
 
-##  ???
-http://wiremock.org
+
+
 
 # Versioning
 
