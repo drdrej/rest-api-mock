@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impl/ParamMapper.js" afterPath="$PROJECT_DIR$/impl/ParamMapper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" afterPath="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
     </list>
     <ignored path="rest-api-mock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,12 +25,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Server-api-ParameterMappingTest.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Server-api-ParameterMappingTest.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+            <state relative-caret-position="431">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+                <folding>
+                  <marker date="1464371884941" expanded="true" signature="1026:1232" placeholder="{...}" />
+                  <marker date="1464371884941" expanded="true" signature="1040:1230" placeholder="[...]" />
+                  <marker date="1464371884941" expanded="true" signature="1041:1229" placeholder="{...}" />
+                  <marker date="1464371884941" expanded="true" signature="1055:1171" placeholder="{...}" />
+                  <marker date="1464371884941" expanded="true" signature="1075:1164" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="2335:2901" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="2383:2899" placeholder="[...]" />
+                  <marker date="1464371884941" expanded="true" signature="2384:2674" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="2491:2629" placeholder="{&quot;log&quot;: true...}" />
+                  <marker date="1464371884941" expanded="true" signature="2511:2603" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="2679:2898" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="2694:2844" placeholder="{&quot;log&quot;: true...}" />
+                  <marker date="1464371884941" expanded="true" signature="2716:2814" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="3028:3059" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="3171:3307" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="3221:3305" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="3318:3403" placeholder="[...]" />
+                  <marker date="1464371884941" expanded="true" signature="3434:3555" placeholder="{...}" />
+                  <marker date="1464371884941" expanded="true" signature="3451:3548" placeholder="{&quot;success&quot;: true...}" />
+                  <marker date="1464371884941" expanded="true" signature="3782:3914" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
+                  <marker date="1464371884941" expanded="true" signature="3829:3911" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -65,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParamMapper.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParamMapper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -121,7 +156,6 @@
         <option value="$PROJECT_DIR$/impl/Endpoints.js" />
         <option value="$PROJECT_DIR$/example.js" />
         <option value="$PROJECT_DIR$/impl/usecase/Ok.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/impl/usecase/Response.js" />
         <option value="$PROJECT_DIR$/impl/usecase/Forward.js" />
@@ -129,7 +163,6 @@
         <option value="$PROJECT_DIR$/examples/usecases/usecase-4.json" />
         <option value="$PROJECT_DIR$/impl/usecase/Error.js" />
         <option value="$PROJECT_DIR$/impl/fluent/ResponseApi.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/examples/moki-trace.log" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/impl/bootstrap/bootstrap.js" />
@@ -137,8 +170,10 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/impl/cli/cli.js" />
         <option value="$PROJECT_DIR$/server-v1.js" />
-        <option value="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
         <option value="$PROJECT_DIR$/impl/ParamMapper.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js" />
       </list>
     </option>
   </component>
@@ -330,7 +365,7 @@
       <workItem from="1464265256104" duration="352000" />
       <workItem from="1464269744078" duration="5194000" />
       <workItem from="1464350642983" duration="2774000" />
-      <workItem from="1464364092318" duration="5053000" />
+      <workItem from="1464364092318" duration="6542000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -378,15 +413,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests_-all - 2016.05.27 at 19h 27m 21s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 28m 55s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="tests_-all - 2016.05.27 at 19h 28m 56s.xml">
-      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="tests_-all - 2016.05.27 at 19h 29m 18s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -408,9 +434,18 @@
     <history-entry file="tests_-all - 2016.05.27 at 19h 43m 37s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="tests_-all - 2016.05.27 at 19h 46m 54s.xml">
+      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests_-all - 2016.05.27 at 19h 50m 13s.xml">
+      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="tests_-all - 2016.05.27 at 19h 58m 16s.xml">
+      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85613000" />
+    <option name="totallyTimeSpent" value="87102000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,44 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="38" />
-            <folding>
-              <marker date="1464270840333" expanded="true" signature="988:1194" placeholder="{...}" />
-              <marker date="1464270840333" expanded="true" signature="1002:1192" placeholder="[...]" />
-              <marker date="1464270840333" expanded="true" signature="1003:1191" placeholder="{...}" />
-              <marker date="1464270840333" expanded="true" signature="1017:1133" placeholder="{...}" />
-              <marker date="1464270840333" expanded="true" signature="1037:1126" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="2297:2863" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="2345:2861" placeholder="[...]" />
-              <marker date="1464270840333" expanded="true" signature="2346:2636" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="2453:2591" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464270840333" expanded="true" signature="2473:2565" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="2641:2860" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="2656:2806" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464270840333" expanded="true" signature="2678:2776" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="2990:3021" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="3133:3269" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="3183:3267" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="3280:3365" placeholder="[...]" />
-              <marker date="1464270840333" expanded="true" signature="3396:3517" placeholder="{...}" />
-              <marker date="1464270840333" expanded="true" signature="3413:3510" placeholder="{&quot;success&quot;: true...}" />
-              <marker date="1464270840333" expanded="true" signature="3744:3876" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-              <marker date="1464270840333" expanded="true" signature="3791:3873" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/impl/Endpoints.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -789,14 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,18 +877,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js">
+    <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impl/ParamMapper.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+            <folding>
+              <marker date="1464371884941" expanded="true" signature="1026:1232" placeholder="{...}" />
+              <marker date="1464371884941" expanded="true" signature="1040:1230" placeholder="[...]" />
+              <marker date="1464371884941" expanded="true" signature="1041:1229" placeholder="{...}" />
+              <marker date="1464371884941" expanded="true" signature="1055:1171" placeholder="{...}" />
+              <marker date="1464371884941" expanded="true" signature="1075:1164" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="2335:2901" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="2383:2899" placeholder="[...]" />
+              <marker date="1464371884941" expanded="true" signature="2384:2674" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="2491:2629" placeholder="{&quot;log&quot;: true...}" />
+              <marker date="1464371884941" expanded="true" signature="2511:2603" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="2679:2898" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="2694:2844" placeholder="{&quot;log&quot;: true...}" />
+              <marker date="1464371884941" expanded="true" signature="2716:2814" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="3028:3059" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="3171:3307" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="3221:3305" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="3318:3403" placeholder="[...]" />
+              <marker date="1464371884941" expanded="true" signature="3434:3555" placeholder="{...}" />
+              <marker date="1464371884941" expanded="true" signature="3451:3548" placeholder="{&quot;success&quot;: true...}" />
+              <marker date="1464371884941" expanded="true" signature="3782:3914" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
+              <marker date="1464371884941" expanded="true" signature="3829:3911" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Server-api-ParameterMappingTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding />
         </state>
       </provider>

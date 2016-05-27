@@ -1,19 +1,21 @@
-# Moki - easy way to mock a rest-api
-[experimental]
+# Moki - [experimental]
+*... mocks your backend*
 
-This CLI-application is a simple way to create mocks in nodejs.
+Moki is an easy way to mock a rest-api and is usefull for Web- & Mobile-developers
+to build rest-based clients without the needs to run a real server.
 
 ### Attention:
 [![Build Status](https://travis-ci.org/drdrej/rest-api-mock.png?branch=master)](https://travis-ci.org/drdrej/app-buildr)
+*This software is permanently in development, so please use it carefuly.*
 
-This software is permanently in development, so please use it carefuly.
 
+## Goals & Features
 
-## Goals
+### Simple way to setup a rest-api.
 
-* Simple way to setup a mocked rest-api.
-* Usefull for Web- & Mobile-developers to build rest-based clients without running a real server.
+### Run a rest-api.
 
+## Static json response
 
 ## Getting started
 

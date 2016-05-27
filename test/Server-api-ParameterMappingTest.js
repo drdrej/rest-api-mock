@@ -78,6 +78,30 @@ describe("Do POST-Requests with different params to check param-handling.", func
 
     });
 
+    describe("get with path param=1, query=xyz", function() {
+
+        it( "get", function( done ) {
+            client.get('/get/1?name=xyz',
+                function(err, req, res, obj) {
+
+                    assert.ifError( err);
+                    assert.equal( 200, res.statusCode );
+
+                    assert.isDefined(obj, 'has response object');
+                    assert.isDefined(obj.success, "response object has property 'success'." );
+
+                    assert.isDefined(obj.q, "response object has property 'q'." );
+                    assert.equal("query=xyz", obj.q);
+
+                    assert.isDefined(obj.p, "response object has property 'p'." );
+                    assert.equal("path=1", obj.p);
+
+                    done();
+            });
+        });
+
+    });
+
 
 });
 
