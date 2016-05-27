@@ -1,0 +1,23 @@
+{
+  "name": "testsuite-3",
+  "description": "to simulate a bug in issue#000",
+
+  "mocks" : [{
+    "name": "endpoint-1",
+    "description": "simple get example to create an get-endpoint with 404 error",
+
+    "on" : {
+
+      "endpoint": {
+        "method": "get",
+        "pattern": "/items",
+        "path": "/items"
+      },
+
+      "log": true
+    },
+
+    "action" : { "items" : ["Apple", "Pineapple"] }
+  }]
+
+}

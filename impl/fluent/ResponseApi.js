@@ -9,7 +9,8 @@ var ResponseApi = function( server, config ) {
     this.ok = function( json ) {
         server.endpoints.ok(config, json);
     };
-
+    
+    // API change: rename to action!
     this.response = function( arguments, callback ) {
         if( _.isFunction(arguments) ) {
             server.endpoints.response(config, arguments, undefined);

@@ -69,8 +69,8 @@ function setupUsecase(server, root, actions, usecase) {
 
                 return;
             }
-        } else {
-            server.on(usecase.on).error( usecase.action ); // numbers will be interpreted as error mocks
+        } else if( _.isObject(usecase.action) ) {
+            server.on(usecase.on).ok( usecase.action ); // numbers will be interpreted as error mocks
         }
     } else
         throw "Not supported";
@@ -78,7 +78,7 @@ function setupUsecase(server, root, actions, usecase) {
 }
 
 module.exports = function(build, config, cwd, story) {
-    var Server = require("../server.js" );
+    var Server = require("../../server.js" );
     var server = new Server(config);
 
     if( story ) {
