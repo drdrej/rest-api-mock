@@ -1,14 +1,52 @@
+var Logger = require('bunyan');
+var log = new Logger({
+    name: 'moki-log',
+    level: "error",
+    streams : [
+        {
+            stream: process.stdout,
+            level: 'info'
+        },
+        {
+            path: './moki-trace.log',
+            level: 'trace'
+        }
+    ],
+
+    src:true
+});
+
+
+/*
+{
+    name: <string>,                     // Required
+    level: <level name or number>,      // Optional, see "Levels" section
+    stream: <node.js stream>,           // Optional, see "Streams" section
+    streams: [<bunyan streams>, ...],   // Optional, see "Streams" section
+    serializers: <serializers mapping>, // Optional, see "Serializers" section
+    src: <boolean>,                     // Optional, see "src" section
+
+    // Any other fields are added to all log records as is.
+    foo: 'bar',
+...
+}
+*/
+
 function storyFile(cwd, story) {
-    return (cwd + "/usecases/" + story + ".json");
+    var file = (cwd + "/usecases/" + story + ".json");
+    log.trace("... use story-file: %s", file);
+
+    return file;
 }
 
 function loadStory( cwd, story ) {
     var jsonfile = require('jsonfile');
 
     var file = storyFile(cwd, story);
+    console.log( "# Setup story: %s", file  );
 
     var rval = jsonfile.readFileSync(file);
-    console.log("Story loaded: " + ( rval ? "yes" : "no" ));
+    console.log( ".. *.mock.json loaded: " + ( rval ? "yes" : "no") );
 
     return rval;
 }
@@ -53,6 +91,8 @@ function setupUsecase(server, root, actions, usecase) {
                 var rel = aPattern.replaceAll('*', usecase.action).s;
 
                 var path = require("path");
+
+                log.trace();
 
                 console.log(">>> relative path.");
                 console.log("... root: " + root);

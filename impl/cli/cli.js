@@ -1,4 +1,4 @@
-var build = require("./build.json");
+var build = require("../../package.json");
 var app = require('commander');
 
 
@@ -19,10 +19,10 @@ app
 
         console.log( "");
         
-        console.log('running usecase: "%s"', story);
+        console.log( '# Running usecase: "%s"', story );
 
         var cwd = process.cwd();
-        console.log("Current directory: " + cwd);
+        console.log( ".. Current directory: " + cwd);
 
         var configFile;
         if (!app.config) {
@@ -31,7 +31,7 @@ app
             configFile = (cwd + "/" + app.config);
         }
 
-        console.log("# .. Use config: " + configFile);
+        console.log(".. Use config: " + configFile);
         var jsonfile = require('jsonfile');
 
         var config;
@@ -41,7 +41,7 @@ app
                          throws: false
                  });
          } catch (e){
-                 console.log( "# .. ! couldn't load moki config file. use defaults." );
+                 console.log( "!! couldn't load moki config file. use defaults." );
          }
 
         if( !config || config === null ) {
@@ -52,8 +52,8 @@ app
         }
 
 
-        console.log("# .. Config loaded: " + ( config ? "yes" : "no" ));
-        console.dir(config);
+        console.log(".. Config loaded: " + ( config ? "yes" : "no" ));
+        // console.dir(config);
 
         var bootstrap = require("../bootstrap/bootstrap");
 

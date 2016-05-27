@@ -63,7 +63,7 @@ Server.prototype.get = function( path ) {
 
 Server.prototype.start = function ( ) {
     if (!this.isUnregistred) {
-        console.log("register endpoints." );
+        console.log("# Setup endpoints." );
 
         this.endpoints.register(this.server);
         this.isUnregistred = true;
@@ -72,9 +72,9 @@ Server.prototype.start = function ( ) {
     // start server ...
     var port = (this.config.port ? this.config.port : 8383);
     this.server.listen( port, function () {
-        console.log("rest-api successful started," );
-        console.log("... listen at port: " + port );
-        console.log("let's play!" );
+        console.log(".. rest-api successful started," );
+        console.log(".. listen at port: " + port );
+        console.log(".. let's play!" );
     });
 };
 

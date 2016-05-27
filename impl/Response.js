@@ -2,7 +2,7 @@ var _ = require( "underscore" );
 
 var Response = function( server, method, pattern, cases ) {
 
-    console.log( "setup endpoint "
+    console.log( "## Setup endpoint "
         + method + ": "
         + pattern);
 
