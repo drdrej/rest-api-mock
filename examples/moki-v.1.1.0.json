@@ -1,0 +1,15 @@
+{
+  "name" : "Example",
+
+   "http" : {
+     "port" : 8181
+   },
+
+  "stateId" : "query://state"
+
+  "https" : {
+    "port" : 443,
+    "keyFile" : "./file.key"
+  }
+
+}

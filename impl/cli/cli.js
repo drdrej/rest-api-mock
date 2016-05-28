@@ -4,7 +4,7 @@ var app = require('commander');
 
 app
     .version(build.version)
-    .option('-c, --config <config>', 'config-file. (*.moki.json) - optional')
+    .option('-c, --config <config>', 'config-file. (*.moki-v.1.1.0.json) - optional')
     .option('-v, --version <version>', 'api version' )
     .option('-l, --log', 'Use log');
 
@@ -26,7 +26,7 @@ app
 
         var configFile;
         if (!app.config) {
-            configFile = (cwd + "/moki.json" );
+            configFile = (cwd + "/moki-v.1.1.0.json" );
         } else {
             configFile = (cwd + "/" + app.config);
         }
