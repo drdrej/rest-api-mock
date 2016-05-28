@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/docs/Roadmap.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
@@ -38,18 +37,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
+              <first_editor relative-caret-position="210">
+                <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
                 <folding>
-                  <marker date="1464460970407" expanded="true" signature="2431:2636" placeholder="{...}" />
-                  <marker date="1464460970407" expanded="true" signature="2445:2634" placeholder="[...]" />
-                  <marker date="1464460970407" expanded="true" signature="2446:2633" placeholder="{...}" />
-                  <marker date="1464460970407" expanded="true" signature="2460:2575" placeholder="{...}" />
-                  <marker date="1464460970407" expanded="true" signature="2480:2568" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1464461085943" expanded="true" signature="2432:2637" placeholder="{...}" />
+                  <marker date="1464461085943" expanded="true" signature="2446:2635" placeholder="[...]" />
+                  <marker date="1464461085943" expanded="true" signature="2447:2634" placeholder="{...}" />
+                  <marker date="1464461085943" expanded="true" signature="2461:2576" placeholder="{...}" />
+                  <marker date="1464461085943" expanded="true" signature="2481:2569" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -57,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Roadmap.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Roadmap.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/Roadmap.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/docs/CLI.md" />
         <option value="$PROJECT_DIR$/docs/MOCK_setup_programmatically.md" />
         <option value="$PROJECT_DIR$/docs/Roadplan.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docs/Roadmap.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -403,7 +402,7 @@
       <workItem from="1464269744078" duration="5194000" />
       <workItem from="1464350642983" duration="2774000" />
       <workItem from="1464364092318" duration="12973000" />
-      <workItem from="1464460583781" duration="400000" />
+      <workItem from="1464460583781" duration="503000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -483,7 +482,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93933000" />
+    <option name="totallyTimeSpent" value="94036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -952,28 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="31" column="76" selection-start-line="31" selection-start-column="76" selection-end-line="31" selection-end-column="76" />
-            <folding>
-              <marker date="1464460970407" expanded="true" signature="2431:2636" placeholder="{...}" />
-              <marker date="1464460970407" expanded="true" signature="2445:2634" placeholder="[...]" />
-              <marker date="1464460970407" expanded="true" signature="2446:2633" placeholder="{...}" />
-              <marker date="1464460970407" expanded="true" signature="2460:2575" placeholder="{...}" />
-              <marker date="1464460970407" expanded="true" signature="2480:2568" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/Roadmap.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -982,6 +959,28 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <folding>
+              <marker date="1464461085943" expanded="true" signature="2432:2637" placeholder="{...}" />
+              <marker date="1464461085943" expanded="true" signature="2446:2635" placeholder="[...]" />
+              <marker date="1464461085943" expanded="true" signature="2447:2634" placeholder="{...}" />
+              <marker date="1464461085943" expanded="true" signature="2461:2576" placeholder="{...}" />
+              <marker date="1464461085943" expanded="true" signature="2481:2569" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
