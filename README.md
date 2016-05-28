@@ -29,12 +29,7 @@ Moki is a way to setup a rest-api with static (and dynamic) responses. So a web-
 a way to develop against a not implemented service. Web-developer can configure response in different way,
 depends on a catched request and matched parameters.
 
-## Goals & Features
-
-* Simple way to setup a rest-api.
-* Run a rest-api.
-* Static & dynamic json responses
-
+* [Roadmap](https://github.com/drdrej/rest-api-mock/blob/master/docs/Roadmap.md)
 
 ## Getting started
 
@@ -122,20 +117,7 @@ http://wiremock.org
 
 ## Services
 * https://www.mockable.io/
-
-
-
-
-# Versioning
-
-I will use the 0.0.0 versioning pattern. I've started the publishing on npm with version 1.0.0. Even until this moment the application is not production stable. I plan to get usefull stability with the release 1.1.0. Until this moment i will increment the minor number with every publishing.
-
-## History
-
-**v.1.0.12** project (rest-api-mock) was renamed to moki and republished at npm.
-
-**before v1.0.11** *this application was published as npm module called 'rest-api-mock'.*
-
+* http://mocky.io
 
 # The MIT License (MIT)
 
