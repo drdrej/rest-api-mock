@@ -10,6 +10,10 @@ to build rest-based clients without the needs to run a real server.
 [![Gitter](https://badges.gitter.im/drdrej/rest-api-mock.svg)](https://gitter.im/drdrej/rest-api-mock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Dependency Status](https://david-dm.org/drdrej/rest-api-mock.svg)](https://david-dm.org/drdrej/rest-api-mock)
 
+
+>[Roadmap](https://github.com/drdrej/rest-api-mock/blob/master/docs/Roadmap.md)
+
+
 **Important:** *This software is permanently in development, so please use it carefuly.*
 
 **Important**: nodejs from V.6 doesn't support EventEmitter. So you will get a warning in console. currently i test this project only until v5.
@@ -28,8 +32,6 @@ Later, if a product has a bug and for example fails in user acceptance tests, th
 Moki is a way to setup a rest-api with static (and dynamic) responses. So a web-developer get simple
 a way to develop against a not implemented service. Web-developer can configure response in different way,
 depends on a catched request and matched parameters.
-
-* [Roadmap](https://github.com/drdrej/rest-api-mock/blob/master/docs/Roadmap.md)
 
 ## Getting started
 
