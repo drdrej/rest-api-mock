@@ -1,6 +1,8 @@
 # Moki - [experimental]
 *... mocks your backend*
 
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+
 Moki is an easy way to mock a rest-api and is usefull for Web- & Mobile-developers
 to build rest-based clients without the needs to run a real server.
 

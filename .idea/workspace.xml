@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42b3b681-e5bc-4c4e-81a1-c5a5323fd866" name="Default" comment="add state/get">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/examples/moki-v.1.1.0.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/impl/schema/test.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/impl/schema/loadSpec.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/examples/specs/items.json" afterPath="$PROJECT_DIR$/examples/specs/example-1.swagger.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/impl/cli/cli.js" afterPath="$PROJECT_DIR$/impl/cli/cli.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="rest-api-mock.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,38 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MOCK_Static_get_Response.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/MOCK_Static_get_Response.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="30">
-                <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-                <folding>
-                  <marker date="1464461180295" expanded="true" signature="2432:2637" placeholder="{...}" />
-                  <marker date="1464461180295" expanded="true" signature="2446:2635" placeholder="[...]" />
-                  <marker date="1464461180295" expanded="true" signature="2447:2634" placeholder="{...}" />
-                  <marker date="1464461180295" expanded="true" signature="2461:2576" placeholder="{...}" />
-                  <marker date="1464461180295" expanded="true" signature="2481:2569" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,67 +37,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/impl/schema/test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-              <folding />
-            </state>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple.moki.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/configs/simple.moki.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moki-v.1.1.0.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/moki-v.1.1.0.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Roadmap.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/Roadmap.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MOCK_setup_programmatically.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/MOCK_setup_programmatically.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="124" selection-start-line="3" selection-start-column="124" selection-end-line="3" selection-end-column="124" />
                 <folding>
-                  <marker date="1464375446701" expanded="true" signature="120:151" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-                  <marker date="1464375446701" expanded="true" signature="263:399" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-                  <marker date="1464375446701" expanded="true" signature="313:397" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-                  <marker date="1464375446701" expanded="true" signature="410:495" placeholder="[...]" />
-                  <marker date="1464375446701" expanded="true" signature="526:646" placeholder="{...}" />
-                  <marker date="1464375446701" expanded="true" signature="543:639" placeholder="{&quot;success&quot;: true...}" />
-                  <marker date="1464375446701" expanded="true" signature="869:1001" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-                  <marker date="1464375446701" expanded="true" signature="916:998" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
+                  <marker date="1465328159433" expanded="true" signature="2558:2763" ph="{...}" />
+                  <marker date="1465328159433" expanded="true" signature="2572:2761" ph="[...]" />
+                  <marker date="1465328159433" expanded="true" signature="2573:2760" ph="{...}" />
+                  <marker date="1465328159433" expanded="true" signature="2587:2702" ph="{...}" />
+                  <marker date="1465328159433" expanded="true" signature="2607:2695" ph="{&quot;method&quot;: &quot;get&quot;...}" />
                 </folding>
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loadSpec.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/impl/schema/loadSpec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example-1.swagger.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/specs/example-1.swagger.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/ServerTest.js" />
         <option value="$PROJECT_DIR$/impl/Forward.js" />
         <option value="$PROJECT_DIR$/impl/usecase/Callback.js" />
         <option value="$PROJECT_DIR$/impl/HandleUseCase.js" />
@@ -194,11 +139,12 @@
         <option value="$PROJECT_DIR$/docs/MOCK_setup_programmatically.md" />
         <option value="$PROJECT_DIR$/docs/Roadplan.md" />
         <option value="$PROJECT_DIR$/docs/Roadmap.md" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/impl/schema/test.js" />
         <option value="$PROJECT_DIR$/examples/moki.json" />
         <option value="$PROJECT_DIR$/examples/moki-v.1.1.0.json" />
+        <option value="$PROJECT_DIR$/impl/schema/loadSpec.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -210,7 +156,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="width" value="1362" />
+    <option name="width" value="1368" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -238,7 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -299,7 +245,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-api-mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="specs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -337,7 +319,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,7 +347,7 @@
       <recent name="$PROJECT_DIR$/impl/usecase" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.examples">
+  <component name="RunManager" selected="Mocha.tests -all">
     <configuration default="false" name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>/usr/bin/node</node-interpreter>
       <node-options />
@@ -508,7 +490,10 @@
       <workItem from="1464269744078" duration="5194000" />
       <workItem from="1464350642983" duration="2774000" />
       <workItem from="1464364092318" duration="12973000" />
-      <workItem from="1464460583781" duration="1163000" />
+      <workItem from="1464460583781" duration="1200000" />
+      <workItem from="1464594678935" duration="84000" />
+      <workItem from="1464722700014" duration="872000" />
+      <workItem from="1465328088164" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="basic impl">
       <created>1462551407773</created>
@@ -556,9 +541,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 39m 48s.xml">
-      <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="Do_POST-Requests_with_different_params_to_check_param-handling__post_with_path_param=1,_query=xyz,_body=_person_age_42 - 2016.05.27 at 20h 40m 33s.xml">
       <configuration name="Do POST-Requests with different params to check param-handling..post with path param=1, query=xyz, body=/person/age/42" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -586,9 +568,12 @@
     <history-entry file="tests_-all - 2016.05.27 at 20h 45m 21s.xml">
       <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="tests_-all - 2016.06.07 at 21h 35m 03s.xml">
+      <configuration name="tests -all" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94696000" />
+    <option name="totallyTimeSpent" value="95761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,13 +585,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1362" height="743" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26327598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26284438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.702521" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77310926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494382" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -619,6 +603,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.702521" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -714,13 +699,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/impl/fluent/ResponseApi-v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="55" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/mockserver_programmaticaly.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -746,13 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/specs/items.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -904,7 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,82 +970,108 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-            <folding>
-              <marker date="1464375374561" expanded="true" signature="699:1265" placeholder="{&quot;actions&quot;: &quot;../actions/*.js&quot;...}" />
-              <marker date="1464375374561" expanded="true" signature="747:1263" placeholder="[...]" />
-              <marker date="1464375374561" expanded="true" signature="748:1038" placeholder="{&quot;name&quot;: &quot;endpoint-1&quot;...}" />
-              <marker date="1464375374561" expanded="true" signature="855:993" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464375374561" expanded="true" signature="875:967" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464375374561" expanded="true" signature="1043:1262" placeholder="{&quot;action&quot;: &quot;http://localhost:8181/item/5&quot;...}" />
-              <marker date="1464375374561" expanded="true" signature="1058:1208" placeholder="{&quot;log&quot;: true...}" />
-              <marker date="1464375374561" expanded="true" signature="1080:1178" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/MOCK_setup_programmatically.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="150">
             <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-            <folding>
-              <marker date="1464375446701" expanded="true" signature="120:151" placeholder="{&quot;name&quot;: &quot;Example&quot;...}" />
-              <marker date="1464375446701" expanded="true" signature="263:399" placeholder="{&quot;name&quot;: &quot;usecase-get-item-1&quot;...}" />
-              <marker date="1464375446701" expanded="true" signature="313:397" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-              <marker date="1464375446701" expanded="true" signature="410:495" placeholder="[...]" />
-              <marker date="1464375446701" expanded="true" signature="526:646" placeholder="{...}" />
-              <marker date="1464375446701" expanded="true" signature="543:639" placeholder="{&quot;success&quot;: true...}" />
-              <marker date="1464375446701" expanded="true" signature="869:1001" placeholder="{&quot;name&quot;: &quot;usecase-forward&quot;...}" />
-              <marker date="1464375446701" expanded="true" signature="916:998" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/MOCK_Static_get_Response.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="30">
             <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/Roadmap.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="9" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-            <folding>
-              <marker date="1464461180295" expanded="true" signature="2432:2637" placeholder="{...}" />
-              <marker date="1464461180295" expanded="true" signature="2446:2635" placeholder="[...]" />
-              <marker date="1464461180295" expanded="true" signature="2447:2634" placeholder="{...}" />
-              <marker date="1464461180295" expanded="true" signature="2461:2576" placeholder="{...}" />
-              <marker date="1464461180295" expanded="true" signature="2481:2569" placeholder="{&quot;method&quot;: &quot;get&quot;...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/examples/moki-v.1.1.0.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/configs/simple.moki.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impl/schema/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/specs/example-1.swagger.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/impl/schema/loadSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,27 +1083,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/impl/schema/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/configs/simple.moki.json">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="1" />
-          <folding />
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/moki-v.1.1.0.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding />
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="124" selection-start-line="3" selection-start-column="124" selection-end-line="3" selection-end-column="124" />
+            <folding>
+              <marker date="1465328159433" expanded="true" signature="2558:2763" ph="{...}" />
+              <marker date="1465328159433" expanded="true" signature="2572:2761" ph="[...]" />
+              <marker date="1465328159433" expanded="true" signature="2573:2760" ph="{...}" />
+              <marker date="1465328159433" expanded="true" signature="2587:2702" ph="{...}" />
+              <marker date="1465328159433" expanded="true" signature="2607:2695" ph="{&quot;method&quot;: &quot;get&quot;...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
