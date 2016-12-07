@@ -1,4 +1,6 @@
 # Moki - [experimental]
+
+[![Join the chat at https://gitter.im/drdrej/rest-api-mock](https://badges.gitter.im/drdrej/rest-api-mock.svg)](https://gitter.im/drdrej/rest-api-mock?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *... mocks your backend*
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
